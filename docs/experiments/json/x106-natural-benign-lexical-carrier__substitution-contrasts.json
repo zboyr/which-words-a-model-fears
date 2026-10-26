@@ -1,0 +1,105 @@
+{
+ "title": "In-place substitution at dose 0, per model and judge: refusal removed by replacing the nominated unit (S), the matched inert word (C) and the hedge (R)",
+ "source": "experiments/x106-natural-benign-lexical-carrier.md",
+ "columns": [
+  "model",
+  "refusal2: r(O) − r(S)",
+  "refusal2: r(O) − r(C)",
+  "refusal2: r(O) − r(R)",
+  "refusal2: Holm p over transfer models (S / C / R)",
+  "GuardReasoner: r(O) − r(S)",
+  "GuardReasoner: r(O) − r(C)",
+  "GuardReasoner: r(O) − r(R)",
+  "GuardReasoner: Holm p over transfer models (S / C / R)"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "refusal2: r(O) − r(S)": "**+0.079** [+0.055, +0.103]",
+   "refusal2: r(O) − r(C)": "-0.001 [-0.022, +0.020]",
+   "refusal2: r(O) − r(R)": "**+0.073** [+0.015, +0.135]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 0.02",
+   "GuardReasoner: r(O) − r(S)": "**+0.111** [+0.085, +0.137]",
+   "GuardReasoner: r(O) − r(C)": "+0.009 [-0.014, +0.032]",
+   "GuardReasoner: r(O) − r(R)": "**+0.123** [+0.052, +0.196]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 9e-4"
+  },
+  {
+   "model": "2B",
+   "refusal2: r(O) − r(S)": "**+0.170** [+0.139, +0.201]",
+   "refusal2: r(O) − r(C)": "+0.008 [-0.015, +0.031]",
+   "refusal2: r(O) − r(R)": "**+0.246** [+0.158, +0.336]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4",
+   "GuardReasoner: r(O) − r(S)": "**+0.202** [+0.167, +0.236]",
+   "GuardReasoner: r(O) − r(C)": "+0.008 [-0.015, +0.031]",
+   "GuardReasoner: r(O) − r(R)": "**+0.346** [+0.246, +0.448]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4"
+  },
+  {
+   "model": "4B",
+   "refusal2: r(O) − r(S)": "**+0.277** [+0.236, +0.318]",
+   "refusal2: r(O) − r(C)": "+0.007 [-0.012, +0.026]",
+   "refusal2: r(O) − r(R)": "**+0.504** [+0.384, +0.619]",
+   "refusal2: Holm p over transfer models (S / C / R)": "reference / reference / reference",
+   "GuardReasoner: r(O) − r(S)": "**+0.286** [+0.246, +0.327]",
+   "GuardReasoner: r(O) − r(C)": "+0.014 [-0.002, +0.031]",
+   "GuardReasoner: r(O) − r(R)": "**+0.555** [+0.437, +0.670]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "reference / reference / reference"
+  },
+  {
+   "model": "9B",
+   "refusal2: r(O) − r(S)": "**+0.218** [+0.179, +0.258]",
+   "refusal2: r(O) − r(C)": "+0.005 [-0.011, +0.021]",
+   "refusal2: r(O) − r(R)": "**+0.448** [+0.316, +0.579]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4",
+   "GuardReasoner: r(O) − r(S)": "**+0.224** [+0.186, +0.265]",
+   "GuardReasoner: r(O) − r(C)": "+0.005 [-0.009, +0.020]",
+   "GuardReasoner: r(O) − r(R)": "**+0.484** [+0.350, +0.614]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4"
+  },
+  {
+   "model": "27B",
+   "refusal2: r(O) − r(S)": "**+0.220** [+0.180, +0.261]",
+   "refusal2: r(O) − r(C)": "+0.019 [-0.002, +0.041]",
+   "refusal2: r(O) − r(R)": "**+0.405** [+0.264, +0.548]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 0.24 / 7e-4",
+   "GuardReasoner: r(O) − r(S)": "**+0.232** [+0.192, +0.271]",
+   "GuardReasoner: r(O) − r(C)": "+0.009 [-0.007, +0.025]",
+   "GuardReasoner: r(O) − r(R)": "**+0.484** [+0.356, +0.608]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "refusal2: r(O) − r(S)": "**+0.033** [+0.015, +0.052]",
+   "refusal2: r(O) − r(C)": "+0.005 [-0.010, +0.019]",
+   "refusal2: r(O) − r(R)": "+0.039 [-0.012, +0.098]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 0.07",
+   "GuardReasoner: r(O) − r(S)": "**+0.028** [+0.011, +0.046]",
+   "GuardReasoner: r(O) − r(C)": "+0.005 [-0.009, +0.019]",
+   "GuardReasoner: r(O) − r(R)": "+0.039 [-0.013, +0.097]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 0.07"
+  },
+  {
+   "model": "Gemma-4-E2B",
+   "refusal2: r(O) − r(S)": "**+0.244** [+0.202, +0.285]",
+   "refusal2: r(O) − r(C)": "-0.005 [-0.025, +0.015]",
+   "refusal2: r(O) − r(R)": "**+0.364** [+0.229, +0.496]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4",
+   "GuardReasoner: r(O) − r(S)": "**+0.231** [+0.190, +0.273]",
+   "GuardReasoner: r(O) − r(C)": "-0.006 [-0.025, +0.014]",
+   "GuardReasoner: r(O) − r(R)": "**+0.361** [+0.220, +0.498]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 7e-4"
+  },
+  {
+   "model": "Phi-4-mini",
+   "refusal2: r(O) − r(S)": "**+0.143** [+0.109, +0.176]",
+   "refusal2: r(O) − r(C)": "+0.003 [-0.021, +0.026]",
+   "refusal2: r(O) − r(R)": "**+0.130** [+0.018, +0.241]",
+   "refusal2: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 0.03",
+   "GuardReasoner: r(O) − r(S)": "**+0.195** [+0.158, +0.232]",
+   "GuardReasoner: r(O) − r(C)": "+0.007 [-0.017, +0.031]",
+   "GuardReasoner: r(O) − r(R)": "**+0.180** [+0.053, +0.308]",
+   "GuardReasoner: Holm p over transfer models (S / C / R)": "7e-4 / 1.00 / 5e-3"
+  }
+ ]
+}

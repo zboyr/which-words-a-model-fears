@@ -1,0 +1,79 @@
+{
+ "title": "Jailbreak / harmfulness benchmarks",
+ "source": "refusal-judges.md",
+ "columns": [
+  "Benchmark",
+  "Official judge",
+  "Label space",
+  "Type",
+  "Usable 2026-10",
+  "Human agreement",
+  "Citation"
+ ],
+ "rows": [
+  {
+   "Benchmark": "**StrongREJECT**",
+   "Official judge": "rubric via `gpt-4o-mini`; fine-tuned `qylu4156/strongreject-15k-v1` (LoRA r=8 on gated `google/gemma-2b`)",
+   "Label space": "rubric: `refusal` 0/1, convincingness 1–5, specificity 1–5 → score; fine-tuned judge outputs **score only**",
+   "Type": "score = HARM/usefulness; the rubric's `refusal` item is REFUSAL",
+   "Usable 2026-10": "yes (this paper uses the fine-tuned judge)",
+   "Human agreement": "Spearman vs median of 5 humans on 1,361 pairs: rubric 0.846, fine-tuned 0.900; no number for the refusal bit alone",
+   "Citation": "Souly et al. NeurIPS 2024 D&B. arXiv:2402.10260"
+  },
+  {
+   "Benchmark": "HarmBench",
+   "Official judge": "`cais/HarmBench-Llama-2-13b-cls`, `-Mistral-7b-val-cls`",
+   "Label space": "yes/no \"instance of the behaviour\"",
+   "Type": "**HARM**",
+   "Usable 2026-10": "ungated, MIT",
+   "Human agreement": "93.19% on 600 (cls); 88.6% (val)",
+   "Citation": "Mazeika et al. ICML 2024. arXiv:2402.04249"
+  },
+  {
+   "Benchmark": "**SORRY-Bench**",
+   "Official judge": "`sorry-bench/ft-mistral-7b-instruct-v0.2-sorry-bench-202406` (Mistral-7B-Instruct-v0.2 fine-tuned on 2,640 human judgments)",
+   "Label space": "0 refuses / 1 fulfils (request + response); disclaimers do not negate fulfilment",
+   "Type": "**REFUSAL** (fulfilment vs refusal)",
+   "Usable 2026-10": "auto-gated, MIT, 7.2B; card: \"only intended as a safety refusal judge on SORRY-Bench\"",
+   "Human agreement": "**κ 0.81** on 4,400 held-out human labels (6 annotators, avg pairwise κ 0.905); GPT-4o prompted 0.789, Llama-3-70B 0.715, WildGuard 0.606, HarmBench 0.525, Llama-Guard-2 0.39, MD-Judge 0.36, keywords 0.373. Third party (Quan et al., COLM 2026, n=200): 90.0% / κ 0.80",
+   "Citation": "Xie et al. ICLR 2025. arXiv:2406.14598"
+  },
+  {
+   "Benchmark": "JailbreakBench",
+   "Official judge": "prompted Llama-3-70B (harm) + Llama-3-8B refusal judge; AdvBench strings",
+   "Label space": "safe/unsafe; Yes/No refusal",
+   "Type": "HARM (main) / REFUSAL (aux, unvalidated)",
+   "Usable 2026-10": "Together endpoints **retired**",
+   "Human agreement": "90.7% on 300 (main)",
+   "Citation": "Chao et al. NeurIPS 2024 D&B. arXiv:2404.01318"
+  },
+  {
+   "Benchmark": "AdvBench / GCG strings",
+   "Official judge": "substring lists (10–31 prefixes)",
+   "Label space": "binary, response only",
+   "Type": "REFUSAL (lexical)",
+   "Usable 2026-10": "yes",
+   "Human agreement": "56–78% agreement, κ 0.37–0.54, refusal recall ≈ 56% (Quan et al. 2026); StrongREJECT Spearman −0.394",
+   "Citation": "Zou et al. 2023. arXiv:2307.15043"
+  },
+  {
+   "Benchmark": "SALAD-Bench / MD-Judge",
+   "Official judge": "`OpenSafetyLab/MD-Judge-v0.1`, `-v0_2-internlm2_7b`",
+   "Label space": "safe/unsafe + category",
+   "Type": "**HARM**",
+   "Usable 2026-10": "ungated",
+   "Human agreement": "none (F1 vs test labels 0.82–0.87)",
+   "Citation": "Li et al. Findings ACL 2024. arXiv:2402.05044"
+  },
+  {
+   "Benchmark": "AgentHarm",
+   "Official judge": "prompted `gpt-4o-2024-08-06` refusal judge",
+   "Label space": "binary",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "yes",
+   "Human agreement": "none",
+   "Citation": "Andriushchenko et al. ICLR 2025. arXiv:2410.09024"
+  }
+ ],
+ "notes": null
+}

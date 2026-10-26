@@ -1,0 +1,130 @@
+{
+ "title": "The two judges against each other on `same_request`, per arm",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "scope",
+  "bucket",
+  "n",
+  "agreement on same_request",
+  "Cohen's kappa",
+  "Haiku 5.5 accepts",
+  "GPT-6 Luna accepts",
+  "both accept"
+ ],
+ "rows": [
+  {
+   "scope": "distinct pairs",
+   "bucket": "C arms pooled",
+   "n": "1885",
+   "agreement on same_request": "0.841",
+   "Cohen's kappa": "0.260",
+   "Haiku 5.5 accepts": "0.954",
+   "GPT-6 Luna accepts": "0.814",
+   "both accept": "0.804"
+  },
+  {
+   "scope": "distinct pairs",
+   "bucket": "R arms pooled",
+   "n": "80",
+   "agreement on same_request": "0.925",
+   "Cohen's kappa": "0.584",
+   "Haiku 5.5 accepts": "0.113",
+   "GPT-6 Luna accepts": "0.087",
+   "both accept": "0.062"
+  },
+  {
+   "scope": "distinct pairs",
+   "bucket": "S arms pooled",
+   "n": "2838",
+   "agreement on same_request": "0.768",
+   "Cohen's kappa": "0.553",
+   "Haiku 5.5 accepts": "0.586",
+   "GPT-6 Luna accepts": "0.397",
+   "both accept": "0.376"
+  },
+  {
+   "scope": "distinct pairs",
+   "bucket": "every pair",
+   "n": "4803",
+   "agreement on same_request": "0.800",
+   "Cohen's kappa": "0.578",
+   "Haiku 5.5 accepts": "0.722",
+   "GPT-6 Luna accepts": "0.556",
+   "both accept": "0.539"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x106 C (inert-word control)",
+   "n": "530",
+   "agreement on same_request": "0.872",
+   "Cohen's kappa": "0.236",
+   "Haiku 5.5 accepts": "0.968",
+   "GPT-6 Luna accepts": "0.855",
+   "both accept": "0.847"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x106 R (hedge removal)",
+   "n": "57",
+   "agreement on same_request": "0.912",
+   "Cohen's kappa": "0.501",
+   "Haiku 5.5 accepts": "0.123",
+   "GPT-6 Luna accepts": "0.070",
+   "both accept": "0.053"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x106 S (benign, deletion-pass nomination)",
+   "n": "473",
+   "agreement on same_request": "0.799",
+   "Cohen's kappa": "0.543",
+   "Haiku 5.5 accepts": "0.789",
+   "GPT-6 Luna accepts": "0.605",
+   "both accept": "0.596"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x108 R (hedge removal)",
+   "n": "23",
+   "agreement on same_request": "0.957",
+   "Cohen's kappa": "0.777",
+   "Haiku 5.5 accepts": "0.087",
+   "GPT-6 Luna accepts": "0.130",
+   "both accept": "0.087"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x108 S (harmful, same rule)",
+   "n": "443",
+   "agreement on same_request": "0.817",
+   "Cohen's kappa": "0.608",
+   "Haiku 5.5 accepts": "0.707",
+   "GPT-6 Luna accepts": "0.582",
+   "both accept": "0.553"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x113 C_T (inert-word control, 8 models)",
+   "n": "3175",
+   "agreement on same_request": "0.837",
+   "Cohen's kappa": "0.282",
+   "Haiku 5.5 accepts": "0.947",
+   "GPT-6 Luna accepts": "0.806",
+   "both accept": "0.795"
+  },
+  {
+   "scope": "owner rows",
+   "bucket": "x113 S_T (table nomination, 8 models)",
+   "n": "3010",
+   "agreement on same_request": "0.756",
+   "Cohen's kappa": "0.521",
+   "Haiku 5.5 accepts": "0.527",
+   "GPT-6 Luna accepts": "0.331",
+   "both accept": "0.307"
+  }
+ ],
+ "notes": [
+  "4,803 pairs carry a label from both judges. Of these both accept 2,588, Haiku alone 882, Luna alone 81, both reject 1,252.",
+  "The control arms agree on 0.84-0.87 of pairs at a kappa of 0.24-0.28: both judges accept almost every inert-word pair, so a few disagreements move kappa a long way."
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "title": "Dedicated refusal classifiers (small encoders)",
+ "source": "refusal-judges.md",
+ "columns": [
+  "Model",
+  "Base, size",
+  "Input",
+  "Validation",
+  "Status"
+ ],
+ "rows": [
+  {
+   "Model": "`NousResearch/Minos-v1`",
+   "Base, size": "ModernBERT-large, 0.4B",
+   "Input": "prompt + response",
+   "Validation": "**none published** (requests for metrics unanswered since 2025-04)",
+   "Status": "ungated, Apache-2.0, frozen since 2025-04"
+  },
+  {
+   "Model": "`garak-llm/garak-refusal-detector`",
+   "Base, size": "ModernBERT-base, 0.15B",
+   "Input": "response only",
+   "Validation": "92.1% on its own **synthetic** test; trained from OR-Bench seed prompts, so not independent of OR-Bench",
+   "Status": "ungated, NVIDIA OML, most-downloaded dedicated detector"
+  },
+  {
+   "Model": "`natong19/refusal_classifier`",
+   "Base, size": "mmBERT-base, 0.3B",
+   "Input": "prompt + response",
+   "Validation": "F1 0.991 vs pseudo-labels (classifier + LLM vote), no humans",
+   "Status": "ungated, 2025-12"
+  },
+  {
+   "Model": "`protectai/distilroberta-base-rejection-v1`",
+   "Base, size": "distilroberta, 82M",
+   "Input": "response only",
+   "Validation": "own test F1 95.4",
+   "Status": "archived"
+  },
+  {
+   "Model": "`Human-CentricAI/LLM-Refusal-Classifier`",
+   "Base, size": "RoBERTa-large",
+   "Input": "response",
+   "Validation": "5-way, no accuracy on card",
+   "Status": "CC-BY-NC"
+  },
+  {
+   "Model": "`LibrAI/longformer-action-ro` (Do-Not-Answer)",
+   "Base, size": "Longformer, 0.15B",
+   "Input": "response",
+   "Validation": "6-way action; 89.8% vs human",
+   "Status": "cards empty"
+  }
+ ],
+ "notes": null
+}

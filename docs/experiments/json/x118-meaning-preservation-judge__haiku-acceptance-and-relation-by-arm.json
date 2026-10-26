@@ -1,0 +1,75 @@
+{
+ "title": "Second judge (`anthropic/claude-haiku-5.5`): share of each arm read as the same request, and the relation it reports",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "source / arm",
+  "accepted as the same request [Wilson 95%]",
+  "relation: same",
+  "relation: narrower",
+  "relation: broader",
+  "relation: different"
+ ],
+ "rows": [
+  {
+   "source / arm": "x106 S (benign, deletion-pass nomination)",
+   "accepted as the same request [Wilson 95%]": "0.789 [0.750, 0.823] (373/473)",
+   "relation: same": "373",
+   "relation: narrower": "3",
+   "relation: broader": "29",
+   "relation: different": "68"
+  },
+  {
+   "source / arm": "x106 C (inert-word control)",
+   "accepted as the same request [Wilson 95%]": "0.968 [0.949, 0.980] (513/530)",
+   "relation: same": "513",
+   "relation: narrower": "1",
+   "relation: broader": "2",
+   "relation: different": "14"
+  },
+  {
+   "source / arm": "x106 R (hedge removal)",
+   "accepted as the same request [Wilson 95%]": "0.123 [0.061, 0.232] (7/57)",
+   "relation: same": "7",
+   "relation: narrower": "1",
+   "relation: broader": "49",
+   "relation: different": "0"
+  },
+  {
+   "source / arm": "x108 S (harmful, same rule)",
+   "accepted as the same request [Wilson 95%]": "0.707 [0.663, 0.747] (313/443)",
+   "relation: same": "312",
+   "relation: narrower": "2",
+   "relation: broader": "40",
+   "relation: different": "89"
+  },
+  {
+   "source / arm": "x108 R (hedge removal)",
+   "accepted as the same request [Wilson 95%]": "0.087 [0.024, 0.268] (2/23)",
+   "relation: same": "2",
+   "relation: narrower": "1",
+   "relation: broader": "20",
+   "relation: different": "0"
+  },
+  {
+   "source / arm": "x113 S_T (table nomination, 8 models)",
+   "accepted as the same request [Wilson 95%]": "0.527 [0.509, 0.544] (1585/3010)",
+   "relation: same": "1574",
+   "relation: narrower": "61",
+   "relation: broader": "230",
+   "relation: different": "1145"
+  },
+  {
+   "source / arm": "x113 C_T (inert-word control, 8 models)",
+   "accepted as the same request [Wilson 95%]": "0.947 [0.939, 0.955] (3008/3175)",
+   "relation: same": "2995",
+   "relation: narrower": "18",
+   "relation: broader": "40",
+   "relation: different": "122"
+  }
+ ],
+ "notes": [
+  "Shares over owner rows: a text two models share counts once per model, as in the first judge's table.",
+  "Over the 4,803 distinct pairs both judges labelled the shares are S 0.586, C 0.954, R 0.113 (first judge: 0.397 / 0.814 / 0.088).",
+  "Two of the 4,805 pairs carry no label: the route returned `finish_reason: content_filter` for them on every attempt. They are counted as not accepted (x108 S one unit, x113 qwen9b S_T one unit)."
+ ]
+}

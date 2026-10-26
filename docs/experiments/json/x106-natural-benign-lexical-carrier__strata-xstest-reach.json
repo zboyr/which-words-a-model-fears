@@ -1,0 +1,96 @@
+{
+ "title": "Substitution by projection stratum, on XSTest, and the reach over the 476 base-refused request-unharmful prompts (refusal2)",
+ "source": "experiments/x106-natural-benign-lexical-carrier.md",
+ "columns": [
+  "model",
+  "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)",
+  "r(O) − r(C) by stratum",
+  "r(O) by stratum",
+  "XSTest r(O) − r(S)",
+  "XSTest r(O) − r(C)",
+  "XSTest write on O (−1.5)",
+  "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.046 / +0.030 / +0.116",
+   "r(O) − r(C) by stratum": "+0.003 / -0.013 / +0.006",
+   "r(O) by stratum": "0.148 / 0.199 / 0.319",
+   "XSTest r(O) − r(S)": "**+0.043** [+0.006, +0.086]",
+   "XSTest r(O) − r(C)": "-0.023 [-0.078, +0.033]",
+   "XSTest write on O (−1.5)": "**+0.031** [+0.010, +0.054]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.69 / 0.19 / 0.54"
+  },
+  {
+   "model": "2B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.057 / +0.122 / +0.217",
+   "r(O) − r(C) by stratum": "-0.042 / +0.015 / +0.011",
+   "r(O) by stratum": "0.239 / 0.371 / 0.596",
+   "XSTest r(O) − r(S)": "**+0.047** [+0.002, +0.095]",
+   "XSTest r(O) − r(C)": "+0.014 [-0.033, +0.063]",
+   "XSTest write on O (−1.5)": "**+0.052** [+0.018, +0.087]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.57 / 0.19 / 0.42"
+  },
+  {
+   "model": "4B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.086 / +0.273 / +0.305",
+   "r(O) − r(C) by stratum": "-0.061 / +0.003 / +0.018",
+   "r(O) by stratum": "0.388 / 0.760 / 0.968",
+   "XSTest r(O) − r(S)": "+0.043 [-0.001, +0.093]",
+   "XSTest r(O) − r(C)": "-0.006 [-0.048, +0.038]",
+   "XSTest write on O (−1.5)": "**+0.044** [+0.018, +0.075]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.32 / 0.19 / 0.44"
+  },
+  {
+   "model": "9B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.229 / +0.154 / +0.261",
+   "r(O) − r(C) by stratum": "+0.039 / -0.006 / +0.007",
+   "r(O) by stratum": "0.630 / 0.806 / 0.947",
+   "XSTest r(O) − r(S)": "**+0.077** [+0.030, +0.130]",
+   "XSTest r(O) − r(C)": "+0.012 [-0.024, +0.052]",
+   "XSTest write on O (−1.5)": "**+0.032** [+0.012, +0.056]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.24 / 0.19 / 0.53"
+  },
+  {
+   "model": "27B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.100 / +0.157 / +0.279",
+   "r(O) − r(C) by stratum": "+0.024 / +0.022 / +0.017",
+   "r(O) by stratum": "0.630 / 0.739 / 0.875",
+   "XSTest r(O) − r(S)": "+0.028 [-0.024, +0.079]",
+   "XSTest r(O) − r(C)": "-0.009 [-0.045, +0.032]",
+   "XSTest write on O (−1.5)": "**+0.022** [+0.005, +0.043]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.33 / 0.19 / 0.51"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.068 / +0.024 / +0.034",
+   "r(O) − r(C) by stratum": "+0.003 / +0.004 / +0.005",
+   "r(O) by stratum": "0.070 / 0.065 / 0.077",
+   "XSTest r(O) − r(S)": "-0.007 [-0.025, +0.003]",
+   "XSTest r(O) − r(C)": "+0.002 [-0.007, +0.010]",
+   "XSTest write on O (−1.5)": "+0.002 [-0.002, +0.008]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.78 / 0.19 / 0.90"
+  },
+  {
+   "model": "Gemma-4-E2B",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.121 / +0.192 / +0.295",
+   "r(O) − r(C) by stratum": "+0.036 / -0.029 / +0.005",
+   "r(O) by stratum": "0.391 / 0.681 / 0.881",
+   "XSTest r(O) − r(S)": "**+0.105** [+0.038, +0.177]",
+   "XSTest r(O) − r(C)": "-0.020 [-0.074, +0.034]",
+   "XSTest write on O (−1.5)": "**+0.075** [+0.035, +0.121]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.38 / 0.19 / 0.57"
+  },
+  {
+   "model": "Phi-4-mini",
+   "r(O) − r(S) by stratum low / mid / high (n 33 / 173 / 270)": "+0.100 / +0.108 / +0.172",
+   "r(O) − r(C) by stratum": "+0.021 / -0.017 / +0.013",
+   "r(O) by stratum": "0.248 / 0.297 / 0.437",
+   "XSTest r(O) − r(S)": "**+0.077** [+0.014, +0.142]",
+   "XSTest r(O) − r(C)": "+0.030 [-0.022, +0.082]",
+   "XSTest write on O (−1.5)": "**+0.075** [+0.045, +0.109]",
+   "share of the 476 with r(S) < 0.5 / no substitute / S does not lower (among S)": "0.64 / 0.19 / 0.48"
+  }
+ ]
+}

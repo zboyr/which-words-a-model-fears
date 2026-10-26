@@ -1,0 +1,47 @@
+{
+ "title": "Table choice: Spearman ρ(table shift, per-word Δ_EO) over the 40 words",
+ "source": "experiments/x111-vocabulary-table-dose-response.md",
+ "columns": [
+  "table",
+  "prompts scanned",
+  "pooled 64 prompts ρ [95% CI]",
+  "perm p (pooled)",
+  "benign test prompts (32) ρ [95% CI]",
+  "harmful test prompts (32) ρ [95% CI]"
+ ],
+ "rows": [
+  {
+   "table": "benign",
+   "prompts scanned": "x109's 40 source-clean",
+   "pooled 64 prompts ρ [95% CI]": "+0.57 [+0.48, +0.63]",
+   "perm p (pooled)": "0.0006",
+   "benign test prompts (32) ρ [95% CI]": "+0.47 [+0.39, +0.54]",
+   "harmful test prompts (32) ρ [95% CI]": "+0.64 [+0.53, +0.75]"
+  },
+  {
+   "table": "BP",
+   "prompts scanned": "x110's 48 over-refused Hard-1K",
+   "pooled 64 prompts ρ [95% CI]": "+0.90 [+0.86, +0.92]",
+   "perm p (pooled)": "0.0001",
+   "benign test prompts (32) ρ [95% CI]": "+0.90 [+0.85, +0.92]",
+   "harmful test prompts (32) ρ [95% CI]": "+0.78 [+0.69, +0.81]"
+  },
+  {
+   "table": "HP",
+   "prompts scanned": "x110's 84 harmful",
+   "pooled 64 prompts ρ [95% CI]": "+0.88 [+0.84, +0.90]",
+   "perm p (pooled)": "0.0001",
+   "benign test prompts (32) ρ [95% CI]": "+0.79 [+0.73, +0.82]",
+   "harmful test prompts (32) ρ [95% CI]": "+0.92 [+0.85, +0.93]"
+  },
+  {
+   "table": "mixed",
+   "prompts scanned": "all 172",
+   "pooled 64 prompts ρ [95% CI]": "+0.88 [+0.83, +0.90]",
+   "perm p (pooled)": "0.0001",
+   "benign test prompts (32) ρ [95% CI]": "+0.81 [+0.75, +0.86]",
+   "harmful test prompts (32) ρ [95% CI]": "+0.86 [+0.77, +0.88]"
+  }
+ ],
+ "notes": "ρ over the 40 words with the words fixed; CI from the prompt-level bootstrap; permutation p over 10,000 word permutations, two-sided on |ρ|. results.json → table_choice."
+}

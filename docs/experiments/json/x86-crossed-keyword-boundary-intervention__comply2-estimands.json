@@ -1,0 +1,47 @@
+{
+ "title": "Substantive compliance (`comply2`) estimands by dose, with KL-matched nulls",
+ "source": "experiments/x86-crossed-keyword-boundary-intervention.md",
+ "columns": [
+  "estimand (comply2)",
+  "half dose (a*/2)",
+  "full dose (a*)"
+ ],
+ "rows": [
+  {
+   "estimand (comply2)": "`suppress_H`",
+   "half dose (a*/2)": "−0.030 [−0.067, +0.006]",
+   "full dose (a*)": "**−0.072 [−0.115, −0.032]**"
+  },
+  {
+   "estimand (comply2)": "`induce_N`",
+   "half dose (a*/2)": "−0.035 [−0.076, +0.003]",
+   "full dose (a*)": "**−0.082 [−0.129, −0.040]**"
+  },
+  {
+   "estimand (comply2)": "`bidirectional`",
+   "half dose (a*/2)": "−0.032 [−0.060, −0.006]",
+   "full dose (a*)": "−0.077 [−0.109, −0.048]"
+  },
+  {
+   "estimand (comply2)": "KL-matched random null",
+   "half dose (a*/2)": "",
+   "full dose (a*)": "−0.001 [−0.031, +0.029]"
+  },
+  {
+   "estimand (comply2)": "KL-matched permutation null",
+   "half dose (a*/2)": "",
+   "full dose (a*)": "−0.026 [−0.067, +0.013]"
+  },
+  {
+   "estimand (comply2)": "**true − random**",
+   "half dose (a*/2)": "",
+   "full dose (a*)": "**−0.076 [−0.111, −0.044]**"
+  },
+  {
+   "estimand (comply2)": "**true − permutation**",
+   "half dose (a*/2)": "",
+   "full dose (a*)": "**−0.051 [−0.089, −0.014]**"
+  }
+ ],
+ "notes": null
+}

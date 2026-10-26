@@ -1,0 +1,115 @@
+{
+ "title": "Condition means (`refusal2`) per model and arm",
+ "source": "experiments/x105-cross-model-direction-causal-specificity.md",
+ "columns": [
+  "model",
+  "O 0",
+  "O +0.75",
+  "O +1.5",
+  "O rand +1.5",
+  "E 0",
+  "E −0.75",
+  "E −1.5",
+  "E rand −1.5 (2 draws)",
+  "E KL-matched rand"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "O 0": "0.093",
+   "O +0.75": "0.146",
+   "O +1.5": "0.204",
+   "O rand +1.5": "0.117",
+   "E 0": "0.199",
+   "E −0.75": "0.153",
+   "E −1.5": "0.102",
+   "E rand −1.5 (2 draws)": "0.189",
+   "E KL-matched rand": "0.157"
+  },
+  {
+   "model": "2B",
+   "O 0": "0.226",
+   "O +0.75": "0.416",
+   "O +1.5": "0.613",
+   "O rand +1.5": "0.176",
+   "E 0": "0.580",
+   "E −0.75": "0.424",
+   "E −1.5": "0.301",
+   "E rand −1.5 (2 draws)": "0.602",
+   "E KL-matched rand": "0.599"
+  },
+  {
+   "model": "4B (reference)",
+   "O 0": "0.232",
+   "O +0.75": "0.396",
+   "O +1.5": "0.570",
+   "O rand +1.5": "0.238",
+   "E 0": "0.576",
+   "E −0.75": "0.433",
+   "E −1.5": "0.304",
+   "E rand −1.5 (2 draws)": "0.573",
+   "E KL-matched rand": "0.574"
+  },
+  {
+   "model": "9B",
+   "O 0": "0.152",
+   "O +0.75": "0.275",
+   "O +1.5": "0.401",
+   "O rand +1.5": "0.174",
+   "E 0": "0.621",
+   "E −0.75": "0.518",
+   "E −1.5": "0.399",
+   "E rand −1.5 (2 draws)": "0.617",
+   "E KL-matched rand": "0.506"
+  },
+  {
+   "model": "27B",
+   "O 0": "0.197",
+   "O +0.75": "0.329",
+   "O +1.5": "0.474",
+   "O rand +1.5": "0.193",
+   "E 0": "0.662",
+   "E −0.75": "0.553",
+   "E −1.5": "0.413",
+   "E rand −1.5 (2 draws)": "0.673",
+   "E KL-matched rand": "0.521"
+  },
+  {
+   "model": "Llama",
+   "O 0": "0.024",
+   "O +0.75": "0.043",
+   "O +1.5": "0.065",
+   "O rand +1.5": "0.023",
+   "E 0": "0.293",
+   "E −0.75": "0.243",
+   "E −1.5": "0.183",
+   "E rand −1.5 (2 draws)": "0.285",
+   "E KL-matched rand": "0.281"
+  },
+  {
+   "model": "Gemma",
+   "O 0": "0.040",
+   "O +0.75": "0.079",
+   "O +1.5": "0.131",
+   "O rand +1.5": "0.052",
+   "E 0": "0.206",
+   "E −0.75": "0.154",
+   "E −1.5": "0.092",
+   "E rand −1.5 (2 draws)": "0.183",
+   "E KL-matched rand": "0.176"
+  },
+  {
+   "model": "Phi",
+   "O 0": "0.037",
+   "O +0.75": "0.084",
+   "O +1.5": "0.140",
+   "O rand +1.5": "0.046",
+   "E 0": "0.132",
+   "E −0.75": "0.071",
+   "E −1.5": "0.045",
+   "E rand −1.5 (2 draws)": "0.149",
+   "E KL-matched rand": "0.111"
+  }
+ ],
+ "notes": "`refusal2` on the 136 primary units (64 x101 units outside the x85 cohort the directions were fit on plus the 72 x114 units); dose 0 is each cohort's own undosed arm."
+}

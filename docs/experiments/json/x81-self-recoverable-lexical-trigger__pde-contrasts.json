@@ -1,0 +1,84 @@
+{
+ "title": "P/D/E arms: condition means and contrasts (n = 108 prompts, 10 responses per prompt-condition)",
+ "source": "experiments/x81-self-recoverable-lexical-trigger.md",
+ "columns": [
+  "quantity",
+  "estimate",
+  "95% CI",
+  "90% CI",
+  "bootstrap p"
+ ],
+ "rows": [
+  {
+   "quantity": "mean `r_O` (historical)",
+   "estimate": "0.851",
+   "95% CI": "",
+   "90% CI": "",
+   "bootstrap p": ""
+  },
+  {
+   "quantity": "mean `r_P` (plain, contemporaneous)",
+   "estimate": "0.864",
+   "95% CI": "",
+   "90% CI": "",
+   "bootstrap p": ""
+  },
+  {
+   "quantity": "mean `r_D` (generic note)",
+   "estimate": "0.919",
+   "95% CI": "",
+   "90% CI": "",
+   "bootstrap p": ""
+  },
+  {
+   "quantity": "mean `r_E` (named note)",
+   "estimate": "0.890",
+   "95% CI": "",
+   "90% CI": "",
+   "bootstrap p": ""
+  },
+  {
+   "quantity": "**`delta_D = r_P − r_D`**",
+   "estimate": "**−0.056**",
+   "95% CI": "**[−0.104, −0.008]**",
+   "90% CI": "[−0.095, −0.017]",
+   "bootstrap p": "0.019"
+  },
+  {
+   "quantity": "**`delta_E = r_P − r_E`**",
+   "estimate": "**−0.026**",
+   "95% CI": "**[−0.073, +0.021]**",
+   "90% CI": "[−0.066, +0.014]",
+   "bootstrap p": "0.286"
+  },
+  {
+   "quantity": "`d_vs_e = r_D − r_E`",
+   "estimate": "+0.030",
+   "95% CI": "[−0.002, +0.062]",
+   "90% CI": "[+0.004, +0.057]",
+   "bootstrap p": "0.065"
+  },
+  {
+   "quantity": "`run_era = r_O − r_P`",
+   "estimate": "−0.013",
+   "95% CI": "[−0.035, +0.007]",
+   "90% CI": "[−0.032, +0.005]",
+   "bootstrap p": "0.246"
+  },
+  {
+   "quantity": "`delta_D_hist = r_O − r_D`",
+   "estimate": "−0.069",
+   "95% CI": "[−0.117, −0.021]",
+   "90% CI": "",
+   "bootstrap p": "0.005"
+  },
+  {
+   "quantity": "`delta_E_hist = r_O − r_E`",
+   "estimate": "−0.039",
+   "95% CI": "[−0.085, +0.008]",
+   "90% CI": "",
+   "bootstrap p": "0.112"
+  }
+ ],
+ "notes": null
+}

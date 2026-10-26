@@ -1,0 +1,79 @@
+{
+ "title": "Per-model derivation records",
+ "source": "experiments/x88-eight-model-deep-dose-transfer.md",
+ "columns": [
+  "model",
+  "x75 edited layer (probe-selected)",
+  "adapter KL at selection (budget 0.02)",
+  "probe target loss",
+  "selected step",
+  "x86 hook block / n_blocks",
+  "min cross-fold direction cosine"
+ ],
+ "rows": [
+  {
+   "model": "qwen08b",
+   "x75 edited layer (probe-selected)": "layers.22.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0186",
+   "probe target loss": "0.0044",
+   "selected step": "375",
+   "x86 hook block / n_blocks": "21 / 24",
+   "min cross-fold direction cosine": "0.971"
+  },
+  {
+   "model": "qwen2b",
+   "x75 edited layer (probe-selected)": "layers.21.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0150",
+   "probe target loss": "0.0014",
+   "selected step": "500",
+   "x86 hook block / n_blocks": "21 / 24",
+   "min cross-fold direction cosine": "0.984"
+  },
+  {
+   "model": "qwen9b",
+   "x75 edited layer (probe-selected)": "layers.31.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0021",
+   "probe target loss": "0.0001",
+   "selected step": "400",
+   "x86 hook block / n_blocks": "28 / 32",
+   "min cross-fold direction cosine": "0.978"
+  },
+  {
+   "model": "qwen27b",
+   "x75 edited layer (probe-selected)": "layers.61.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0022",
+   "probe target loss": "0.0007",
+   "selected step": "500",
+   "x86 hook block / n_blocks": "56 / 64",
+   "min cross-fold direction cosine": "0.985"
+  },
+  {
+   "model": "llama",
+   "x75 edited layer (probe-selected)": "layers.26.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0134",
+   "probe target loss": "0.0023",
+   "selected step": "300",
+   "x86 hook block / n_blocks": "25 / 28",
+   "min cross-fold direction cosine": "0.971"
+  },
+  {
+   "model": "gemma",
+   "x75 edited layer (probe-selected)": "language_model.layers.32.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0032",
+   "probe target loss": "0.0018",
+   "selected step": "500",
+   "x86 hook block / n_blocks": "31 / 35",
+   "min cross-fold direction cosine": "0.979"
+  },
+  {
+   "model": "phi",
+   "x75 edited layer (probe-selected)": "layers.25.mlp.down_proj",
+   "adapter KL at selection (budget 0.02)": "0.0110",
+   "probe target loss": "0.0027",
+   "selected step": "500",
+   "x86 hook block / n_blocks": "28 / 32",
+   "min cross-fold direction cosine": "0.974"
+  }
+ ],
+ "notes": null
+}

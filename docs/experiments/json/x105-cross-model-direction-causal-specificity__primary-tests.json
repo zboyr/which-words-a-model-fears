@@ -1,0 +1,79 @@
+{
+ "title": "Primary tests: suppression on E, induction on O, target − random",
+ "source": "experiments/x105-cross-model-direction-causal-specificity.md",
+ "columns": [
+  "model",
+  "suppress E (−1.5)",
+  "induce O (+1.5)",
+  "target − random (E)",
+  "Holm p (7)",
+  "verdict"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "suppress E (−1.5)": "**+0.096** [+0.062, +0.131]",
+   "induce O (+1.5)": "**+0.110** [+0.074, +0.149]",
+   "target − random (E)": "**+0.086** [+0.054, +0.118]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  },
+  {
+   "model": "2B",
+   "suppress E (−1.5)": "**+0.279** [+0.235, +0.325]",
+   "induce O (+1.5)": "**+0.387** [+0.340, +0.435]",
+   "target − random (E)": "**+0.301** [+0.257, +0.346]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  },
+  {
+   "model": "4B (reference)",
+   "suppress E (−1.5)": "**+0.272** [+0.222, +0.324]",
+   "induce O (+1.5)": "**+0.338** [+0.287, +0.390]",
+   "target − random (E)": "**+0.269** [+0.224, +0.317]",
+   "Holm p (7)": "—",
+   "verdict": "holds"
+  },
+  {
+   "model": "9B",
+   "suppress E (−1.5)": "**+0.223** [+0.176, +0.269]",
+   "induce O (+1.5)": "**+0.249** [+0.202, +0.299]",
+   "target − random (E)": "**+0.218** [+0.177, +0.260]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  },
+  {
+   "model": "27B",
+   "suppress E (−1.5)": "**+0.249** [+0.199, +0.299]",
+   "induce O (+1.5)": "**+0.276** [+0.221, +0.331]",
+   "target − random (E)": "**+0.260** [+0.210, +0.310]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  },
+  {
+   "model": "Llama",
+   "suppress E (−1.5)": "**+0.110** [+0.074, +0.148]",
+   "induce O (+1.5)": "**+0.040** [+0.018, +0.066]",
+   "target − random (E)": "**+0.102** [+0.069, +0.137]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  },
+  {
+   "model": "Gemma",
+   "suppress E (−1.5)": "**+0.114** [+0.071, +0.160]",
+   "induce O (+1.5)": "**+0.091** [+0.050, +0.135]",
+   "target − random (E)": "**+0.091** [+0.056, +0.131]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  },
+  {
+   "model": "Phi",
+   "suppress E (−1.5)": "**+0.087** [+0.051, +0.126]",
+   "induce O (+1.5)": "**+0.103** [+0.071, +0.137]",
+   "target − random (E)": "**+0.104** [+0.071, +0.141]",
+   "Holm p (7)": "7e-4 / 7e-4 / 7e-4",
+   "verdict": "holds"
+  }
+ ],
+ "notes": "n = 136 units per model: 64 x101 units whose prompt and inserted word are both outside the x85 cohort the directions were fit on, plus the 72 x114 units, x85-free by construction. `suppress E` = r(E, 0) − r(E, −1.5); `induce O` = r(O, +1.5) − r(O, 0); `target − random` = `suppress E` minus the same contrast under the two norm-matched random directions. Bold = the 95 % interval excludes zero on the predicted side. Holm is over the seven transfer models, separately within each test (the three values are the three tests in column order); Qwen3.5-4B is the reference row. The 64-unit and 130-unit values are in `data/results/x105_cross_model_direction_causality_x101only.json` and `..._full.json`."
+}

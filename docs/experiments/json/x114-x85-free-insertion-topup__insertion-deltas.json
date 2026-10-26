@@ -1,0 +1,282 @@
+{
+ "title": "The inserted word's effect on the x114 units, per model and position",
+ "source": "experiments/x114-x85-free-insertion-topup.md",
+ "columns": [
+  "model",
+  "position",
+  "n",
+  "mean r_O",
+  "mean r_pos",
+  "delta",
+  "Holm p (24)",
+  "n admitted",
+  "gated delta"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.068",
+   "mean r_pos": "0.093",
+   "delta": "+0.025 [-0.010, +0.061]",
+   "Holm p (24)": "0.329",
+   "n admitted": "0",
+   "gated delta": "—"
+  },
+  {
+   "model": "0.8B",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.068",
+   "mean r_pos": "0.076",
+   "delta": "+0.008 [-0.022, +0.040]",
+   "Holm p (24)": "0.613",
+   "n admitted": "0",
+   "gated delta": "—"
+  },
+  {
+   "model": "0.8B",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.068",
+   "mean r_pos": "0.176",
+   "delta": "**+0.108** [+0.057, +0.164]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "3",
+   "gated delta": "+0.200"
+  },
+  {
+   "model": "2B",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.200",
+   "mean r_pos": "0.404",
+   "delta": "**+0.204** [+0.139, +0.271]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "0",
+   "gated delta": "—"
+  },
+  {
+   "model": "2B",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.200",
+   "mean r_pos": "0.353",
+   "delta": "**+0.153** [+0.093, +0.217]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "1",
+   "gated delta": "+0.000"
+  },
+  {
+   "model": "2B",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.200",
+   "mean r_pos": "0.575",
+   "delta": "**+0.375** [+0.290, +0.458]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "5",
+   "gated delta": "+0.260"
+  },
+  {
+   "model": "4B (reference)",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.219",
+   "mean r_pos": "0.550",
+   "delta": "**+0.331** [+0.247, +0.414]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "14",
+   "gated delta": "+0.343"
+  },
+  {
+   "model": "4B (reference)",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.219",
+   "mean r_pos": "0.383",
+   "delta": "**+0.164** [+0.085, +0.247]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "27",
+   "gated delta": "+0.256"
+  },
+  {
+   "model": "4B (reference)",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.219",
+   "mean r_pos": "0.560",
+   "delta": "**+0.340** [+0.256, +0.428]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "65",
+   "gated delta": "+0.372"
+  },
+  {
+   "model": "9B",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.157",
+   "mean r_pos": "0.490",
+   "delta": "**+0.333** [+0.253, +0.415]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "14",
+   "gated delta": "+0.471"
+  },
+  {
+   "model": "9B",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.157",
+   "mean r_pos": "0.369",
+   "delta": "**+0.213** [+0.135, +0.294]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "46",
+   "gated delta": "+0.261"
+  },
+  {
+   "model": "9B",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.157",
+   "mean r_pos": "0.658",
+   "delta": "**+0.501** [+0.414, +0.587]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "69",
+   "gated delta": "+0.503"
+  },
+  {
+   "model": "27B",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.207",
+   "mean r_pos": "0.547",
+   "delta": "**+0.340** [+0.251, +0.429]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "69",
+   "gated delta": "+0.338"
+  },
+  {
+   "model": "27B",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.207",
+   "mean r_pos": "0.407",
+   "delta": "**+0.200** [+0.132, +0.272]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "53",
+   "gated delta": "+0.213"
+  },
+  {
+   "model": "27B",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.207",
+   "mean r_pos": "0.682",
+   "delta": "**+0.475** [+0.382, +0.568]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "71",
+   "gated delta": "+0.480"
+  },
+  {
+   "model": "Llama",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.017",
+   "mean r_pos": "0.103",
+   "delta": "**+0.086** [+0.031, +0.151]",
+   "Holm p (24)": "1e-2",
+   "n admitted": "0",
+   "gated delta": "—"
+  },
+  {
+   "model": "Llama",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.017",
+   "mean r_pos": "0.096",
+   "delta": "**+0.079** [+0.026, +0.138]",
+   "Holm p (24)": "1e-2",
+   "n admitted": "3",
+   "gated delta": "+0.033"
+  },
+  {
+   "model": "Llama",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.017",
+   "mean r_pos": "0.293",
+   "delta": "**+0.276** [+0.181, +0.376]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "29",
+   "gated delta": "+0.124"
+  },
+  {
+   "model": "Gemma",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.022",
+   "mean r_pos": "0.139",
+   "delta": "**+0.117** [+0.050, +0.193]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "23",
+   "gated delta": "+0.104"
+  },
+  {
+   "model": "Gemma",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.022",
+   "mean r_pos": "0.101",
+   "delta": "**+0.079** [+0.024, +0.143]",
+   "Holm p (24)": "1e-2",
+   "n admitted": "56",
+   "gated delta": "+0.095"
+  },
+  {
+   "model": "Gemma",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.022",
+   "mean r_pos": "0.160",
+   "delta": "**+0.138** [+0.068, +0.215]",
+   "Holm p (24)": "<1e-4",
+   "n admitted": "71",
+   "gated delta": "+0.139"
+  },
+  {
+   "model": "Phi",
+   "position": "S",
+   "n": "72",
+   "mean r_O": "0.025",
+   "mean r_pos": "0.056",
+   "delta": "**+0.031** [+0.006, +0.060]",
+   "Holm p (24)": "0.056",
+   "n admitted": "0",
+   "gated delta": "—"
+  },
+  {
+   "model": "Phi",
+   "position": "M",
+   "n": "72",
+   "mean r_O": "0.025",
+   "mean r_pos": "0.056",
+   "delta": "+0.031 [-0.000, +0.069]",
+   "Holm p (24)": "0.17",
+   "n admitted": "2",
+   "gated delta": "+0.050"
+  },
+  {
+   "model": "Phi",
+   "position": "E",
+   "n": "72",
+   "mean r_O": "0.025",
+   "mean r_pos": "0.101",
+   "delta": "**+0.076** [+0.028, +0.131]",
+   "Holm p (24)": "2e-3",
+   "n admitted": "56",
+   "gated delta": "+0.095"
+  }
+ ],
+ "notes": "`refusal2` on the 72 x114 units, each model's own regenerated original as the control. `delta` = mean_i(r_pos,i − r_O,i) with a 10,000-replicate two-stage paired bootstrap interval; bold = the interval excludes zero. Holm is over all 24 model × position tests. `n admitted` is the detection gate (P_detect > 0.90) and `gated delta` the same contrast on those prompts (— where the gate admits none). Result file `data/results/x114_insertion_topup.json`."
+}

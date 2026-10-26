@@ -1,0 +1,63 @@
+{
+ "title": "ρ on the concordant words, on the middle four bins, partial ρ given token count and log word-frequency rank, and per-cell ρ against the split-half noise ceiling (pooled prompts)",
+ "source": "experiments/x112-cross-model-vocabulary-table.md",
+ "columns": [
+  "model",
+  "ρ concordant 24, own / Qwen",
+  "ρ middle four bins (12), own / Qwen",
+  "partial ρ (tokens, log freq), own / Qwen",
+  "per-cell ρ own / Qwen / in-context (ceiling)"
+ ],
+ "rows": [
+  {
+   "model": "Gemma",
+   "ρ concordant 24, own / Qwen": "+0.89 / +0.88",
+   "ρ middle four bins (12), own / Qwen": "+0.38 / +0.41",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.80 / +0.71",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.29 / +0.27 / +0.54 (0.93)"
+  },
+  {
+   "model": "Llama",
+   "ρ concordant 24, own / Qwen": "+0.62 / +0.63 (23 words)",
+   "ρ middle four bins (12), own / Qwen": "+0.35 / +0.40",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.45 / +0.50",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.25 / +0.26 / +0.49 (0.96)"
+  },
+  {
+   "model": "Phi",
+   "ρ concordant 24, own / Qwen": "+0.97 / +0.96",
+   "ρ middle four bins (12), own / Qwen": "+0.88 / +0.81",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.89 / +0.69",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.52 / +0.42 / +0.70 (0.82)"
+  },
+  {
+   "model": "Qwen 0.8B",
+   "ρ concordant 24, own / Qwen": "+0.97 / +0.97",
+   "ρ middle four bins (12), own / Qwen": "+0.84 / +0.82",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.96 / +0.76",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.66 / +0.53 / +0.73 (0.79)"
+  },
+  {
+   "model": "Qwen 2B",
+   "ρ concordant 24, own / Qwen": "+0.92 / +0.92",
+   "ρ middle four bins (12), own / Qwen": "+0.86 / +0.83",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.83 / +0.76",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.44 / +0.41 / +0.65 (0.77)"
+  },
+  {
+   "model": "Qwen 9B",
+   "ρ concordant 24, own / Qwen": "+0.94 / +0.93",
+   "ρ middle four bins (12), own / Qwen": "+0.94 / +0.91",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.86 / +0.87",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.45 / +0.46 / +0.79 (0.87)"
+  },
+  {
+   "model": "Qwen 27B",
+   "ρ concordant 24, own / Qwen": "+0.75 / +0.75",
+   "ρ middle four bins (12), own / Qwen": "+0.49 / +0.55",
+   "partial ρ (tokens, log freq), own / Qwen": "+0.77 / +0.68",
+   "per-cell ρ own / Qwen / in-context (ceiling)": "+0.33 / +0.29 / +0.55 (0.88)"
+  }
+ ],
+ "notes": "Per-cell ρ is over (word, prompt) cells; the ceiling is the Spearman-Brown reliability of the twenty-sample cell Δ_EO from twenty random half splits."
+}

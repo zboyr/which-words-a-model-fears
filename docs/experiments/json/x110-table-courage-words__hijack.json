@@ -1,0 +1,47 @@
+{
+ "title": "Hijack readout: uptake of the appended word on E and N cells and `refusal2` conditional on it",
+ "source": "experiments/x110-table-courage-words.md",
+ "columns": [
+  "cells",
+  "responses",
+  "hijack (LLM)",
+  "plain mention of the word",
+  "`refusal2` given hijack",
+  "`refusal2` given no hijack"
+ ],
+ "rows": [
+  {
+   "cells": "E, HP",
+   "responses": "9,600",
+   "hijack (LLM)": "0.205",
+   "plain mention of the word": "0.177",
+   "`refusal2` given hijack": "0.410",
+   "`refusal2` given no hijack": "0.540"
+  },
+  {
+   "cells": "N, HP",
+   "responses": "9,600",
+   "hijack (LLM)": "0.106",
+   "plain mention of the word": "0.121",
+   "`refusal2` given hijack": "0.345",
+   "`refusal2` given no hijack": "0.741"
+  },
+  {
+   "cells": "E, BP",
+   "responses": "9,600",
+   "hijack (LLM)": "0.444",
+   "plain mention of the word": "0.357",
+   "`refusal2` given hijack": "0.449",
+   "`refusal2` given no hijack": "0.706"
+  },
+  {
+   "cells": "N, BP",
+   "responses": "9,600",
+   "hijack (LLM)": "0.166",
+   "plain mention of the word": "0.172",
+   "`refusal2` given hijack": "0.740",
+   "`refusal2` given no hijack": "0.922"
+  }
+ ],
+ "notes": "Label: the reasoning-disabled pass of the hijack judge over every E and N cell; HP rows are the 96 prompts of the primary set (the 81 that are not x85 prompts plus the 15 top-up prompts; 9,600 responses per kind), BP rows the 96 (9,600). Source: data/runs/x110/results.json, `hijack_pooled`."
+}

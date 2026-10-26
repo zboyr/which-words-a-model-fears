@@ -1,0 +1,55 @@
+{
+ "title": "r(O) of the selection cell and of the second O cell (`Orep`) per population, and their pooled difference",
+ "source": "experiments/x112-cross-model-vocabulary-table.md",
+ "columns": [
+  "model",
+  "r(O) benign / harmful (selection cell)",
+  "replicate benign / harmful",
+  "O − replicate, pooled [95% CI]"
+ ],
+ "rows": [
+  {
+   "model": "Gemma",
+   "r(O) benign / harmful (selection cell)": "0.463 / 0.487",
+   "replicate benign / harmful": "0.509 / 0.578",
+   "O − replicate, pooled [95% CI]": "-0.069 [-0.125, -0.013]"
+  },
+  {
+   "model": "Llama",
+   "r(O) benign / harmful (selection cell)": "0.444 / 0.528",
+   "replicate benign / harmful": "0.412 / 0.500",
+   "O − replicate, pooled [95% CI]": "+0.030 [-0.014, +0.073]"
+  },
+  {
+   "model": "Phi",
+   "r(O) benign / harmful (selection cell)": "0.506 / 0.497",
+   "replicate benign / harmful": "0.503 / 0.600",
+   "O − replicate, pooled [95% CI]": "-0.050 [-0.095, -0.002]"
+  },
+  {
+   "model": "Qwen 0.8B",
+   "r(O) benign / harmful (selection cell)": "0.500 / 0.553",
+   "replicate benign / harmful": "0.484 / 0.544",
+   "O − replicate, pooled [95% CI]": "+0.012 [-0.033, +0.056]"
+  },
+  {
+   "model": "Qwen 2B",
+   "r(O) benign / harmful (selection cell)": "0.522 / 0.566",
+   "replicate benign / harmful": "0.525 / 0.537",
+   "O − replicate, pooled [95% CI]": "+0.012 [-0.034, +0.058]"
+  },
+  {
+   "model": "Qwen 9B",
+   "r(O) benign / harmful (selection cell)": "0.494 / 0.538",
+   "replicate benign / harmful": "0.631 / 0.547",
+   "O − replicate, pooled [95% CI]": "-0.073 [-0.113, -0.033]"
+  },
+  {
+   "model": "Qwen 27B",
+   "r(O) benign / harmful (selection cell)": "0.469 / 0.509",
+   "replicate benign / harmful": "0.484 / 0.531",
+   "O − replicate, pooled [95% CI]": "-0.019 [-0.077, +0.044]"
+  }
+ ],
+ "notes": "Mean over models of O − replicate -0.022. A shift of the O level moves every bin of a model by the same amount and leaves the bin order, top minus bottom and every ρ unchanged; results.json carries Δ against the replicate per bin (delta_E_minus_Orep)."
+}

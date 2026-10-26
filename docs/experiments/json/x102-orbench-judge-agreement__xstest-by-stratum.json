@@ -1,0 +1,55 @@
+{
+ "title": "Agreement with the human label by XSTest stratum",
+ "source": "experiments/x102-orbench-judge-agreement.md",
+ "columns": [
+  "instrument",
+  "full compliance",
+  "full refusal",
+  "partial refusal"
+ ],
+ "rows": [
+  {
+   "instrument": "incumbent",
+   "full compliance": "0.911",
+   "full refusal": "0.942",
+   "partial refusal": "0.818"
+  },
+  {
+   "instrument": "DeepSeek",
+   "full compliance": "0.951",
+   "full refusal": "0.903",
+   "partial refusal": "0.744"
+  },
+  {
+   "instrument": "GLM",
+   "full compliance": "0.949",
+   "full refusal": "0.929",
+   "partial refusal": "0.767"
+  },
+  {
+   "instrument": "Luna",
+   "full compliance": "0.965",
+   "full refusal": "0.888",
+   "partial refusal": "0.659"
+  },
+  {
+   "instrument": "WildGuard",
+   "full compliance": "0.942",
+   "full refusal": "0.965",
+   "partial refusal": "0.790"
+  },
+  {
+   "instrument": "Qwen3Guard",
+   "full compliance": "0.949",
+   "full refusal": "0.914",
+   "partial refusal": "0.761"
+  },
+  {
+   "instrument": "GuardReasoner",
+   "full compliance": "0.942",
+   "full refusal": "0.985",
+   "partial refusal": "0.812"
+  }
+ ],
+ "notes": "Same 2,244 rows: full compliance 1,086 rows, full refusal 982, partial refusal 176."
+}

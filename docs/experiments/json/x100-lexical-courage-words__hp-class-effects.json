@@ -1,0 +1,71 @@
+{
+ "title": "HP class effects under `refusal2`, Holm over the six candidate classes",
+ "source": "experiments/x100-lexical-courage-words.md",
+ "columns": [
+  "class",
+  "Δ_c = r_W − r_N",
+  "95% CI",
+  "Holm p",
+  "mean r_W / r_N",
+  "outcome"
+ ],
+ "rows": [
+  {
+   "class": "containment",
+   "Δ_c = r_W − r_N": "**+0.075**",
+   "95% CI": "[+0.018, +0.133]",
+   "Holm p": "0.064",
+   "mean r_W / r_N": "0.816 / 0.741",
+   "outcome": "null/small"
+  },
+  {
+   "class": "authorization",
+   "Δ_c = r_W − r_N": "+0.064",
+   "95% CI": "[+0.005, +0.122]",
+   "Holm p": "0.167",
+   "mean r_W / r_N": "0.847 / 0.783",
+   "outcome": "null/small"
+  },
+  {
+   "class": "defensive",
+   "Δ_c = r_W − r_N": "+0.036",
+   "95% CI": "[−0.027, +0.099]",
+   "Holm p": "1.00",
+   "mean r_W / r_N": "0.807 / 0.771",
+   "outcome": "null/small"
+  },
+  {
+   "class": "educational",
+   "Δ_c = r_W − r_N": "−0.001",
+   "95% CI": "[−0.068, +0.066]",
+   "Holm p": "1.00",
+   "mean r_W / r_N": "0.752 / 0.753",
+   "outcome": "null/small"
+  },
+  {
+   "class": "fictional",
+   "Δ_c = r_W − r_N": "−0.029",
+   "95% CI": "[−0.091, +0.031]",
+   "Holm p": "1.00",
+   "mean r_W / r_N": "0.727 / 0.756",
+   "outcome": "null/small"
+  },
+  {
+   "class": "professional",
+   "Δ_c = r_W − r_N": "+0.026",
+   "95% CI": "[−0.032, +0.084]",
+   "Holm p": "1.00",
+   "mean r_W / r_N": "0.821 / 0.795",
+   "outcome": "null/small"
+  },
+  {
+   "class": "harm_control (not in family)",
+   "Δ_c = r_W − r_N": "+0.150",
+   "95% CI": "[+0.089, +0.212]",
+   "Holm p": "—",
+   "mean r_W / r_N": "0.905 / 0.755",
+   "outcome": "positive control"
+  }
+ ],
+ "notes": null
+}

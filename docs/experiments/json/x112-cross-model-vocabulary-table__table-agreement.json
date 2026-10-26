@@ -1,0 +1,73 @@
+{
+ "title": "Between-model table agreement over the 47,371 eligible words: Spearman with the Qwen3.5-4B BP table and shared words at the two ends",
+ "source": "experiments/x112-cross-model-vocabulary-table.md",
+ "columns": [
+  "row",
+  "Qwen3.5-4B BP",
+  "Gemma",
+  "Llama",
+  "Phi",
+  "Qwen 0.8B",
+  "Qwen 2B",
+  "Qwen 9B",
+  "Qwen 27B"
+ ],
+ "rows": [
+  {
+   "row": "Spearman with Qwen3.5-4B BP",
+   "Qwen3.5-4B BP": "1",
+   "Gemma": "+0.46",
+   "Llama": "+0.45",
+   "Phi": "+0.36",
+   "Qwen 0.8B": "+0.58",
+   "Qwen 2B": "+0.70",
+   "Qwen 9B": "+0.76",
+   "Qwen 27B": "+0.73"
+  },
+  {
+   "row": "top 100 shared with Qwen3.5-4B BP",
+   "Qwen3.5-4B BP": "100",
+   "Gemma": "46",
+   "Llama": "40",
+   "Phi": "36",
+   "Qwen 0.8B": "41",
+   "Qwen 2B": "27",
+   "Qwen 9B": "46",
+   "Qwen 27B": "39"
+  },
+  {
+   "row": "bottom 100 shared",
+   "Qwen3.5-4B BP": "100",
+   "Gemma": "58",
+   "Llama": "6",
+   "Phi": "11",
+   "Qwen 0.8B": "42",
+   "Qwen 2B": "42",
+   "Qwen 9B": "49",
+   "Qwen 27B": "42"
+  },
+  {
+   "row": "top 1 % (474) shared",
+   "Qwen3.5-4B BP": "474",
+   "Gemma": "212",
+   "Llama": "246",
+   "Phi": "249",
+   "Qwen 0.8B": "235",
+   "Qwen 2B": "242",
+   "Qwen 9B": "279",
+   "Qwen 27B": "271"
+  },
+  {
+   "row": "bottom 1 % shared",
+   "Qwen3.5-4B BP": "474",
+   "Gemma": "232",
+   "Llama": "121",
+   "Phi": "68",
+   "Qwen 0.8B": "227",
+   "Qwen 2B": "270",
+   "Qwen 9B": "305",
+   "Qwen 27B": "314"
+  }
+ ],
+ "notes": "Chance overlap 0.21 of 100 and 4.7 of 474. Among the seven tables Spearman runs from +0.29 (Phi vs Qwen 27B) to +0.81 (Qwen 27B vs Qwen 9B). Words in the top 1 % of all eight tables: 60; bottom 1 %: 25. Independent of the held-out prompts."
+}

@@ -1,0 +1,52 @@
+{
+ "title": "Eight-model OR-Bench base refusal rates, incumbent judge → GuardReasoner (the x88 base rates rebuilt)",
+ "source": "experiments/x104-guardreasoner-orbench-rejudge.md",
+ "columns": [
+  "model",
+  "Hard-1K base: incumbent → GuardReasoner",
+  "Toxic base: incumbent → GuardReasoner"
+ ],
+ "rows": [
+  {
+   "model": "Qwen3.5-0.8B",
+   "Hard-1K base: incumbent → GuardReasoner": "0.4655 → **0.4102**",
+   "Toxic base: incumbent → GuardReasoner": "0.7420 → **0.7176**"
+  },
+  {
+   "model": "Qwen3.5-2B",
+   "Hard-1K base: incumbent → GuardReasoner": "0.6884 → **0.6960**",
+   "Toxic base: incumbent → GuardReasoner": "0.9420 → **0.9481**"
+  },
+  {
+   "model": "Qwen3.5-4B",
+   "Hard-1K base: incumbent → GuardReasoner": "0.8802 → **0.8855**",
+   "Toxic base: incumbent → GuardReasoner": "0.9893 → **0.9863**"
+  },
+  {
+   "model": "Qwen3.5-9B",
+   "Hard-1K base: incumbent → GuardReasoner": "0.9030 → **0.9113**",
+   "Toxic base: incumbent → GuardReasoner": "0.9924 → **0.9908**"
+  },
+  {
+   "model": "Qwen3.5-27B",
+   "Hard-1K base: incumbent → GuardReasoner": "0.8825 → **0.9037**",
+   "Toxic base: incumbent → GuardReasoner": "0.9908 → **0.9908**"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "Hard-1K base: incumbent → GuardReasoner": "0.1031 → **0.0910**",
+   "Toxic base: incumbent → GuardReasoner": "0.7374 → **0.7267**"
+  },
+  {
+   "model": "gemma-4-e2b",
+   "Hard-1K base: incumbent → GuardReasoner": "0.7991 → **0.7801**",
+   "Toxic base: incumbent → GuardReasoner": "0.9649 → **0.9573**"
+  },
+  {
+   "model": "Phi-4-mini",
+   "Hard-1K base: incumbent → GuardReasoner": "0.5861 → **0.5729**",
+   "Toxic base: incumbent → GuardReasoner": "0.9710 → **0.9740**"
+  }
+ ],
+ "notes": null
+}

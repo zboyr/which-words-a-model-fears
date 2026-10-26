@@ -1,0 +1,37 @@
+{
+ "title": "Dose extension: edited − base at `x86_m075`, `x86_m100` and `x75_m4`",
+ "source": "experiments/x87-external-safety-overrefusal-eval.md",
+ "columns": [
+  "edited − base",
+  "`x86_m075`",
+  "`x86_m100`",
+  "`x75_m4`"
+ ],
+ "rows": [
+  {
+   "edited − base": "Hard-1K refusal",
+   "`x86_m075`": "−0.052 [up −0.037]",
+   "`x86_m100`": "−0.059 [up −0.043]",
+   "`x75_m4`": "−0.086 [up −0.066]"
+  },
+  {
+   "edited − base": "Toxic refusal",
+   "`x86_m075`": "−0.011",
+   "`x86_m100`": "−0.014",
+   "`x75_m4`": "−0.023 [low −0.038]"
+  },
+  {
+   "edited − base": "StrongREJECT score",
+   "`x86_m075`": "**+0.035 [up +0.059]**",
+   "`x86_m100`": "+0.009 [up +0.029]",
+   "`x75_m4`": "+0.017 [up +0.037]"
+  },
+  {
+   "edited − base": "IFEval strict",
+   "`x86_m075`": "+0.017",
+   "`x86_m100`": "+0.019",
+   "`x75_m4`": "+0.013"
+  }
+ ],
+ "notes": "Same-style bounds are reported for comparability."
+}

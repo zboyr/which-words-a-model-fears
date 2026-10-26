@@ -1,0 +1,61 @@
+{
+ "title": "Guard models with an explicit refusal field",
+ "source": "refusal-judges.md",
+ "columns": [
+  "Model",
+  "HF id",
+  "Size",
+  "Gate / licence",
+  "Refusal output",
+  "Reported refusal quality",
+  "Citation"
+ ],
+ "rows": [
+  {
+   "Model": "**WildGuard**",
+   "HF id": "`allenai/wildguard` (Mistral-7B-v0.3)",
+   "Size": "7.25B (bf16 ≈ 14.5 GB)",
+   "Gate / licence": "auto-gated click-through, Apache-2.0, card updated 2025-07",
+   "Refusal output": "`Response refusal: yes/no` (+ harmful request, harmful response)",
+   "Reported refusal quality": "own paper: refusal F1 88.6 WildGuardTest / 92.8 XSTest-Resp; label Fleiss κ 0.72. **Third-party human validation:** 96.3% / κ 0.93 vs consensus on 450 XSTest responses (Joad et al. 2026, arXiv:2602.02132); 94.0% / κ 0.86 on 200 blinded pairs (Xu et al. 2026, arXiv:2606.09864). Disagreements concentrate on partial compliance",
+   "Citation": "Han et al. NeurIPS 2024 D&B. arXiv:2406.18495"
+  },
+  {
+   "Model": "**Qwen3Guard-Gen**",
+   "HF id": "`Qwen/Qwen3Guard-Gen-0.6B` / `-4B` / `-8B`",
+   "Size": "0.75 / 4.4 / 8.2B",
+   "Gate / licence": "**ungated**, Apache-2.0 (2025-09)",
+   "Refusal output": "`Refusal: Yes/No` (+ Safe/Controversial/Unsafe). Stream variants have no refusal label",
+   "Reported refusal quality": "refusal F1 XSTest / WildGuardTest: 0.6B 93.3 / 89.4; **4B 94.6 / 90.2**; 8B 92.6 / 90.0. **No human-agreement number.** Same vendor lineage as the incumbent Qwen3.5-4B judge. A prepended refusal phrase flips its *harm* head (Feng et al. 2026, arXiv:2608.03201)",
+   "Citation": "Qwen Team 2025. arXiv:2510.14276"
+  },
+  {
+   "Model": "GuardReasoner",
+   "HF id": "`yueliu1999/GuardReasoner-1B/-3B/-8B` (Llama-3.x)",
+   "Size": "1–8B",
+   "Gate / licence": "ungated",
+   "Refusal output": "refusal/compliance with reasoning trace",
+   "Reported refusal quality": "refusal F1 8B 88.9 / 93.7; no human number; shares WildGuardTrain with WildGuard",
+   "Citation": "Liu et al. 2025. arXiv:2501.18492"
+  },
+  {
+   "Model": "PolyGuard",
+   "HF id": "`ToxicityPrompts/PolyGuard-Qwen-Smol` / `-Qwen` / `-Ministral`",
+   "Size": "0.5–8B",
+   "Gate / licence": "ungated, CC-BY",
+   "Refusal output": "`Response refusal: yes/no`",
+   "Reported refusal quality": "in-distribution F1 81–85 only",
+   "Citation": "Kumar et al. COLM 2025. arXiv:2504.04377"
+  },
+  {
+   "Model": "GLiGuard",
+   "HF id": "`fastino/gliguard-LLMGuardrails-300M`",
+   "Size": "0.2B",
+   "Gate / licence": "ungated",
+   "Refusal output": "`response_refusal`",
+   "Reported refusal quality": "refusal F1 not reported (**unverified**)",
+   "Citation": "Zaratiana et al. 2026. arXiv:2605.07982"
+  }
+ ],
+ "notes": null
+}

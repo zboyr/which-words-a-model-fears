@@ -1,0 +1,128 @@
+{
+ "title": "Dose-response over the concordant bins (`refusal2`, Δ_EO = r(E) − r(O), pooled held-out prompts, three words per bin, x85 cohort rows excluded, harmful stratum topped up)",
+ "source": "experiments/x112-cross-model-vocabulary-table.md",
+ "columns": [
+  "bin",
+  "mean of seven [95% CI]",
+  "Gemma",
+  "Llama",
+  "Phi",
+  "Qwen 0.8B",
+  "Qwen 2B",
+  "Qwen 9B",
+  "Qwen 27B"
+ ],
+ "rows": [
+  {
+   "bin": "[0,1)",
+   "mean of seven [95% CI]": "-0.114 [-0.147, -0.081]",
+   "Gemma": "-0.007",
+   "Llama": "-0.119",
+   "Phi": "-0.247",
+   "Qwen 0.8B": "-0.329",
+   "Qwen 2B": "-0.092",
+   "Qwen 9B": "-0.124",
+   "Qwen 27B": "+0.121"
+  },
+  {
+   "bin": "[1,5)",
+   "mean of seven [95% CI]": "-0.121 [-0.152, -0.089]",
+   "Gemma": "-0.103",
+   "Llama": "-0.311",
+   "Phi": "-0.122",
+   "Qwen 0.8B": "-0.218",
+   "Qwen 2B": "-0.102",
+   "Qwen 9B": "-0.111",
+   "Qwen 27B": "+0.124"
+  },
+  {
+   "bin": "[5,25)",
+   "mean of seven [95% CI]": "-0.004 [-0.032, +0.025]",
+   "Gemma": "+0.144",
+   "Llama": "-0.083",
+   "Phi": "+0.040",
+   "Qwen 0.8B": "-0.097",
+   "Qwen 2B": "-0.035",
+   "Qwen 9B": "-0.093",
+   "Qwen 27B": "+0.097"
+  },
+  {
+   "bin": "[25,50)",
+   "mean of seven [95% CI]": "+0.047 [+0.018, +0.076]",
+   "Gemma": "+0.167",
+   "Llama": "-0.018",
+   "Phi": "+0.060",
+   "Qwen 0.8B": "-0.080",
+   "Qwen 2B": "-0.021",
+   "Qwen 9B": "-0.003",
+   "Qwen 27B": "+0.221"
+  },
+  {
+   "bin": "[50,75)",
+   "mean of seven [95% CI]": "+0.102 [+0.072, +0.132]",
+   "Gemma": "+0.212",
+   "Llama": "+0.009",
+   "Phi": "+0.169",
+   "Qwen 0.8B": "-0.021",
+   "Qwen 2B": "+0.055",
+   "Qwen 9B": "+0.056",
+   "Qwen 27B": "+0.235"
+  },
+  {
+   "bin": "[75,95)",
+   "mean of seven [95% CI]": "+0.133 [+0.107, +0.158]",
+   "Gemma": "+0.196",
+   "Llama": "+0.088",
+   "Phi": "+0.196",
+   "Qwen 0.8B": "+0.026",
+   "Qwen 2B": "+0.093",
+   "Qwen 9B": "+0.110",
+   "Qwen 27B": "+0.221"
+  },
+  {
+   "bin": "[95,99)",
+   "mean of seven [95% CI]": "+0.249 [+0.223, +0.274]",
+   "Gemma": "+0.315",
+   "Llama": "+0.090",
+   "Phi": "+0.264",
+   "Qwen 0.8B": "+0.193",
+   "Qwen 2B": "+0.193",
+   "Qwen 9B": "+0.291",
+   "Qwen 27B": "+0.396"
+  },
+  {
+   "bin": "[99,100]",
+   "mean of seven [95% CI]": "+0.361 [+0.337, +0.384]",
+   "Gemma": "+0.385",
+   "Llama": "+0.323",
+   "Phi": "+0.320",
+   "Qwen 0.8B": "+0.380",
+   "Qwen 2B": "+0.298",
+   "Qwen 9B": "+0.379",
+   "Qwen 27B": "+0.445"
+  },
+  {
+   "bin": "adjacent pairs in order",
+   "mean of seven [95% CI]": "6/7",
+   "Gemma": "5/7",
+   "Llama": "6/7",
+   "Phi": "7/7",
+   "Qwen 0.8B": "7/7",
+   "Qwen 2B": "6/7",
+   "Qwen 9B": "7/7",
+   "Qwen 27B": "5/7"
+  },
+  {
+   "bin": "top − bottom [95% CI]",
+   "mean of seven [95% CI]": "+0.475 [+0.444, +0.507]",
+   "Gemma": "+0.392 [+0.282, +0.498]",
+   "Llama": "+0.443 [+0.328, +0.558]",
+   "Phi": "+0.568 [+0.505, +0.630]",
+   "Qwen 0.8B": "+0.709 [+0.669, +0.750]",
+   "Qwen 2B": "+0.390 [+0.306, +0.471]",
+   "Qwen 9B": "+0.503 [+0.443, +0.565]",
+   "Qwen 27B": "+0.324 [+0.240, +0.412]"
+  }
+ ],
+ "notes": "Per model, prompts (benign / harmful) × words after the x85 exclusion and the top-up: Gemma 32 (16 / 16) prompts × 40 words, Llama 32 (16 / 16) prompts × 39 words, Phi 32 (16 / 16) prompts × 40 words, Qwen 0.8B 32 (16 / 16) prompts × 40 words, Qwen 2B 32 (16 / 16) prompts × 40 words, Qwen 9B 32 (16 / 16) prompts × 40 words, Qwen 27B 32 (16 / 16) prompts × 40 words. Mean of seven: mean of the per-model bin means; interval from the mean of the seven independent prompt-level bootstrap draws (10,000). Per-model intervals: prompt-level paired bootstrap, resampled within population."
+}

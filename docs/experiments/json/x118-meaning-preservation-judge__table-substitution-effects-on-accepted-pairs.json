@@ -1,0 +1,109 @@
+{
+ "title": "Benign Hard-1K, table-nominated substitution (x85 units excluded): `refusal2` removed on all pairs and on the pairs the judge accepts",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "model",
+  "S_T: all pairs",
+  "S_T: n",
+  "S_T: accepted pairs",
+  "S_T: n accepted",
+  "C_T: all pairs",
+  "C_T: n",
+  "C_T: accepted pairs",
+  "C_T: n accepted"
+ ],
+ "rows": [
+  {
+   "model": "Qwen3.5-4B",
+   "S_T: all pairs": "+0.278 [+0.230, +0.327]",
+   "S_T: n": "251",
+   "S_T: accepted pairs": "**+0.168 [+0.099, +0.240]**",
+   "S_T: n accepted": "76",
+   "C_T: all pairs": "+0.037 [+0.015, +0.059]",
+   "C_T: n": "258",
+   "C_T: accepted pairs": "+0.032 [+0.009, +0.055]",
+   "C_T: n accepted": "215"
+  },
+  {
+   "model": "Qwen3.5-0.8B",
+   "S_T: all pairs": "+0.145 [+0.110, +0.181]",
+   "S_T: n": "246",
+   "S_T: accepted pairs": "**+0.045 [-0.029, +0.126]**",
+   "S_T: n accepted": "49",
+   "C_T: all pairs": "+0.036 [+0.004, +0.068]",
+   "C_T: n": "258",
+   "C_T: accepted pairs": "+0.034 [+0.002, +0.069]",
+   "C_T: n accepted": "206"
+  },
+  {
+   "model": "Qwen3.5-2B",
+   "S_T: all pairs": "+0.246 [+0.204, +0.288]",
+   "S_T: n": "249",
+   "S_T: accepted pairs": "**+0.191 [+0.121, +0.260]**",
+   "S_T: n accepted": "78",
+   "C_T: all pairs": "+0.018 [-0.014, +0.051]",
+   "C_T: n": "258",
+   "C_T: accepted pairs": "+0.016 [-0.017, +0.049]",
+   "C_T: n accepted": "222"
+  },
+  {
+   "model": "Qwen3.5-9B",
+   "S_T: all pairs": "+0.232 [+0.185, +0.279]",
+   "S_T: n": "247",
+   "S_T: accepted pairs": "**+0.108 [+0.052, +0.169]**",
+   "S_T: n accepted": "75",
+   "C_T: all pairs": "+0.023 [+0.004, +0.043]",
+   "C_T: n": "258",
+   "C_T: accepted pairs": "+0.023 [+0.003, +0.044]",
+   "C_T: n accepted": "221"
+  },
+  {
+   "model": "Qwen3.5-27B",
+   "S_T: all pairs": "+0.287 [+0.237, +0.339]",
+   "S_T: n": "249",
+   "S_T: accepted pairs": "**+0.140 [+0.066, +0.220]**",
+   "S_T: n accepted": "68",
+   "C_T: all pairs": "+0.050 [+0.025, +0.077]",
+   "C_T: n": "258",
+   "C_T: accepted pairs": "+0.037 [+0.013, +0.062]",
+   "C_T: n accepted": "218"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "S_T: all pairs": "+0.052 [+0.027, +0.078]",
+   "S_T: n": "252",
+   "S_T: accepted pairs": "**+0.052 [+0.007, +0.103]**",
+   "S_T: n accepted": "84",
+   "C_T: all pairs": "+0.011 [-0.012, +0.035]",
+   "C_T: n": "257",
+   "C_T: accepted pairs": "+0.010 [-0.015, +0.036]",
+   "C_T: n accepted": "228"
+  },
+  {
+   "model": "Gemma-4-E2B",
+   "S_T: all pairs": "+0.261 [+0.209, +0.313]",
+   "S_T: n": "250",
+   "S_T: accepted pairs": "**+0.147 [+0.071, +0.232]**",
+   "S_T: n accepted": "74",
+   "C_T: all pairs": "+0.023 [-0.000, +0.049]",
+   "C_T: n": "257",
+   "C_T: accepted pairs": "+0.016 [-0.008, +0.041]",
+   "C_T: n accepted": "209"
+  },
+  {
+   "model": "Phi-4-mini",
+   "S_T: all pairs": "+0.204 [+0.158, +0.251]",
+   "S_T: n": "249",
+   "S_T: accepted pairs": "**+0.188 [+0.105, +0.276]**",
+   "S_T: n accepted": "59",
+   "C_T: all pairs": "+0.033 [-0.001, +0.067]",
+   "C_T: n": "258",
+   "C_T: accepted pairs": "+0.026 [-0.011, +0.063]",
+   "C_T: n accepted": "230"
+  }
+ ],
+ "notes": [
+  "Population: x113 Hard-1K, x85-free. Prompt-paired two-stage bootstrap, 10,000 replicates, prompts resampled within stratum, then the ten binary responses of each arm; `refusal2`.",
+  "All pairs: every unit with the text, as the owning experiment reports it. Accepted pairs: the units whose (original, edited) pair the independent judge reads as the same request."
+ ]
+}

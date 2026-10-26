@@ -1,0 +1,97 @@
+{
+ "title": "Dose, the KL-matched control, and the share of the rise removed",
+ "source": "experiments/x105-cross-model-direction-causal-specificity.md",
+ "columns": [
+  "model",
+  "suppress E (−0.75)",
+  "induce O (+0.75)",
+  "dose slope",
+  "monotone",
+  "target − KL-matched random",
+  "random on O",
+  "rise removed"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "suppress E (−0.75)": "**+0.046** [+0.018, +0.074]",
+   "induce O (+0.75)": "**+0.053** [+0.024, +0.082]",
+   "dose slope": "**+0.069** [+0.050, +0.088]",
+   "monotone": "0.999",
+   "target − KL-matched random": "**+0.055** [+0.028, +0.083]",
+   "random on O": "+0.024 [-0.004, +0.051]",
+   "rise removed": "0.92"
+  },
+  {
+   "model": "2B",
+   "suppress E (−0.75)": "**+0.157** [+0.120, +0.194]",
+   "induce O (+0.75)": "**+0.190** [+0.149, +0.232]",
+   "dose slope": "**+0.222** [+0.199, +0.245]",
+   "monotone": "1.000",
+   "target − KL-matched random": "**+0.299** [+0.249, +0.347]",
+   "random on O": "-0.050 [-0.082, -0.018]",
+   "rise removed": "0.79"
+  },
+  {
+   "model": "4B (reference)",
+   "suppress E (−0.75)": "**+0.143** [+0.104, +0.183]",
+   "induce O (+0.75)": "**+0.165** [+0.121, +0.207]",
+   "dose slope": "**+0.203** [+0.177, +0.231]",
+   "monotone": "1.000",
+   "target − KL-matched random": "**+0.270** [+0.219, +0.322]",
+   "random on O": "+0.007 [-0.026, +0.040]",
+   "rise removed": "0.79"
+  },
+  {
+   "model": "9B",
+   "suppress E (−0.75)": "**+0.104** [+0.070, +0.140]",
+   "induce O (+0.75)": "**+0.123** [+0.089, +0.157]",
+   "dose slope": "**+0.157** [+0.134, +0.180]",
+   "monotone": "1.000",
+   "target − KL-matched random": "**+0.107** [+0.064, +0.150]",
+   "random on O": "+0.022 [-0.007, +0.051]",
+   "rise removed": "0.47"
+  },
+  {
+   "model": "27B",
+   "suppress E (−0.75)": "**+0.110** [+0.076, +0.146]",
+   "induce O (+0.75)": "**+0.132** [+0.096, +0.171]",
+   "dose slope": "**+0.175** [+0.149, +0.202]",
+   "monotone": "1.000",
+   "target − KL-matched random": "**+0.107** [+0.068, +0.149]",
+   "random on O": "-0.004 [-0.031, +0.024]",
+   "rise removed": "0.54"
+  },
+  {
+   "model": "Llama",
+   "suppress E (−0.75)": "**+0.050** [+0.026, +0.078]",
+   "induce O (+0.75)": "**+0.019** [+0.006, +0.035]",
+   "dose slope": "**+0.050** [+0.036, +0.066]",
+   "monotone": "0.990",
+   "target − KL-matched random": "**+0.098** [+0.062, +0.137]",
+   "random on O": "-0.001 [-0.015, +0.011]",
+   "rise removed": "0.41"
+  },
+  {
+   "model": "Gemma",
+   "suppress E (−0.75)": "**+0.052** [+0.024, +0.085]",
+   "induce O (+0.75)": "**+0.040** [+0.012, +0.072]",
+   "dose slope": "**+0.068** [+0.046, +0.093]",
+   "monotone": "0.998",
+   "target − KL-matched random": "**+0.084** [+0.048, +0.126]",
+   "random on O": "+0.012 [-0.002, +0.029]",
+   "rise removed": "0.69"
+  },
+  {
+   "model": "Phi",
+   "suppress E (−0.75)": "**+0.060** [+0.032, +0.092]",
+   "induce O (+0.75)": "**+0.046** [+0.025, +0.070]",
+   "dose slope": "**+0.063** [+0.046, +0.082]",
+   "monotone": "0.992",
+   "target − KL-matched random": "**+0.066** [+0.038, +0.097]",
+   "random on O": "+0.009 [-0.009, +0.027]",
+   "rise removed": "0.92"
+  }
+ ],
+ "notes": "The 136 primary units. The dose slope is the per-prompt oriented slope over magnitudes {0, 0.75, 1.5}; \"monotone\" is the bootstrap fraction in which both sides are ordered (full > half > 0). \"rise removed\" is `suppress E (−1.5)` over the insertion rise r(E, 0) − r(O, 0) on the same units."
+}

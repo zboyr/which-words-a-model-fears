@@ -1,0 +1,54 @@
+{
+ "title": "Share of each model's own table-guided texts the judge reads as the same request",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "model",
+  "S_T accepted [Wilson 95%]",
+  "C_T accepted [Wilson 95%]"
+ ],
+ "rows": [
+  {
+   "model": "Qwen3.5-4B",
+   "S_T accepted [Wilson 95%]": "0.341 [0.295, 0.390] (130/381)",
+   "C_T accepted [Wilson 95%]": "0.780 [0.737, 0.818] (309/396)"
+  },
+  {
+   "model": "Qwen3.5-0.8B",
+   "S_T accepted [Wilson 95%]": "0.278 [0.235, 0.326] (104/374)",
+   "C_T accepted [Wilson 95%]": "0.766 [0.722, 0.805] (304/397)"
+  },
+  {
+   "model": "Qwen3.5-2B",
+   "S_T accepted [Wilson 95%]": "0.350 [0.304, 0.400] (132/377)",
+   "C_T accepted [Wilson 95%]": "0.824 [0.783, 0.858] (327/397)"
+  },
+  {
+   "model": "Qwen3.5-9B",
+   "S_T accepted [Wilson 95%]": "0.345 [0.299, 0.394] (129/374)",
+   "C_T accepted [Wilson 95%]": "0.809 [0.767, 0.844] (321/397)"
+  },
+  {
+   "model": "Qwen3.5-27B",
+   "S_T accepted [Wilson 95%]": "0.320 [0.275, 0.369] (120/375)",
+   "C_T accepted [Wilson 95%]": "0.816 [0.775, 0.851] (324/397)"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "S_T accepted [Wilson 95%]": "0.353 [0.306, 0.402] (134/380)",
+   "C_T accepted [Wilson 95%]": "0.816 [0.775, 0.851] (324/397)"
+  },
+  {
+   "model": "Gemma-4-E2B",
+   "S_T accepted [Wilson 95%]": "0.349 [0.303, 0.399] (132/378)",
+   "C_T accepted [Wilson 95%]": "0.786 [0.743, 0.823] (312/397)"
+  },
+  {
+   "model": "Phi-4-mini",
+   "S_T accepted [Wilson 95%]": "0.306 [0.262, 0.355] (114/372)",
+   "C_T accepted [Wilson 95%]": "0.849 [0.810, 0.881] (337/397)"
+  }
+ ],
+ "notes": [
+  "Each model's 397 units; the share is over that model's own S_T / C_T texts, before the x85 exclusion."
+ ]
+}

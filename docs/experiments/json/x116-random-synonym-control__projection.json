@@ -1,0 +1,88 @@
+{
+ "title": "Hard-1K: boundary projection of R_rand against S_T, x85-free",
+ "source": "experiments/x116-random-synonym-control.md",
+ "columns": [
+  "model",
+  "proj(S_T) − proj(O) (sd)",
+  "proj(R_rand) − proj(O) (sd)",
+  "proj(R_rand) − proj(S_T) [95% CI]",
+  "share R_rand projection above S_T",
+  "ρ(projection gap, refusal gap)",
+  "ρ(shift gap, projection gap)"
+ ],
+ "rows": [
+  {
+   "model": "Qwen3.5-4B",
+   "proj(S_T) − proj(O) (sd)": "-0.86",
+   "proj(R_rand) − proj(O) (sd)": "-0.74",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.12 [+0.03, +0.21]",
+   "share R_rand projection above S_T": "0.55",
+   "ρ(projection gap, refusal gap)": "+0.57",
+   "ρ(shift gap, projection gap)": "+0.03"
+  },
+  {
+   "model": "Qwen3.5-0.8B",
+   "proj(S_T) − proj(O) (sd)": "-0.73",
+   "proj(R_rand) − proj(O) (sd)": "-0.60",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.13 [+0.07, +0.18]",
+   "share R_rand projection above S_T": "0.64",
+   "ρ(projection gap, refusal gap)": "+0.43",
+   "ρ(shift gap, projection gap)": "+0.25"
+  },
+  {
+   "model": "Qwen3.5-2B",
+   "proj(S_T) − proj(O) (sd)": "-0.74",
+   "proj(R_rand) − proj(O) (sd)": "-0.61",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.13 [+0.05, +0.21]",
+   "share R_rand projection above S_T": "0.57",
+   "ρ(projection gap, refusal gap)": "+0.62",
+   "ρ(shift gap, projection gap)": "+0.22"
+  },
+  {
+   "model": "Qwen3.5-9B",
+   "proj(S_T) − proj(O) (sd)": "-0.78",
+   "proj(R_rand) − proj(O) (sd)": "-0.60",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.18 [+0.11, +0.25]",
+   "share R_rand projection above S_T": "0.65",
+   "ρ(projection gap, refusal gap)": "+0.54",
+   "ρ(shift gap, projection gap)": "+0.14"
+  },
+  {
+   "model": "Qwen3.5-27B",
+   "proj(S_T) − proj(O) (sd)": "-0.87",
+   "proj(R_rand) − proj(O) (sd)": "-0.70",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.17 [+0.08, +0.28]",
+   "share R_rand projection above S_T": "0.56",
+   "ρ(projection gap, refusal gap)": "+0.57",
+   "ρ(shift gap, projection gap)": "+0.10"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "proj(S_T) − proj(O) (sd)": "-0.75",
+   "proj(R_rand) − proj(O) (sd)": "-0.62",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.12 [+0.04, +0.20]",
+   "share R_rand projection above S_T": "0.56",
+   "ρ(projection gap, refusal gap)": "+0.26",
+   "ρ(shift gap, projection gap)": "+0.15"
+  },
+  {
+   "model": "Gemma-4-E2B",
+   "proj(S_T) − proj(O) (sd)": "-0.61",
+   "proj(R_rand) − proj(O) (sd)": "-0.40",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.21 [+0.14, +0.29]",
+   "share R_rand projection above S_T": "0.66",
+   "ρ(projection gap, refusal gap)": "+0.53",
+   "ρ(shift gap, projection gap)": "+0.18"
+  },
+  {
+   "model": "Phi-4-mini",
+   "proj(S_T) − proj(O) (sd)": "-0.80",
+   "proj(R_rand) − proj(O) (sd)": "-0.66",
+   "proj(R_rand) − proj(S_T) [95% CI]": "+0.14 [+0.07, +0.21]",
+   "share R_rand projection above S_T": "0.62",
+   "ρ(projection gap, refusal gap)": "+0.57",
+   "ρ(shift gap, projection gap)": "+0.08"
+  }
+ ],
+ "notes": "x113's read site and reader; O re-read in the x116 job and checked against x113's O (max |diff| 0 sd on seven models, 0.09 sd on Qwen3.5-9B); R_rand change taken against x113's O. Interval: unit bootstrap, 2,000 replicates."
+}

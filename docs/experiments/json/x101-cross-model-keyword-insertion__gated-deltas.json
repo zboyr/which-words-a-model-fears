@@ -1,0 +1,282 @@
+{
+ "title": "Gated deltas on each model's admitted prompts",
+ "source": "experiments/x101-cross-model-keyword-insertion.md",
+ "columns": [
+  "model",
+  "pos",
+  "n adm.",
+  "mean r_O",
+  "mean r_pos",
+  "delta",
+  "95 % CI",
+  "Holm p (3)",
+  "Holm p (18)"
+ ],
+ "rows": [
+  {
+   "model": "qwen",
+   "pos": "S",
+   "n adm.": "21",
+   "mean r_O": "0.25",
+   "mean r_pos": "0.73",
+   "delta": "**+0.481**",
+   "95 % CI": "[+0.319, +0.638]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen",
+   "pos": "M",
+   "n adm.": "43",
+   "mean r_O": "0.27",
+   "mean r_pos": "0.51",
+   "delta": "**+0.237**",
+   "95 % CI": "[+0.130, +0.349]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen",
+   "pos": "E",
+   "n adm.": "111",
+   "mean r_O": "0.22",
+   "mean r_pos": "0.62",
+   "delta": "**+0.400**",
+   "95 % CI": "[+0.332, +0.468]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen08b",
+   "pos": "S",
+   "n adm.": "0",
+   "mean r_O": "—",
+   "mean r_pos": "—",
+   "delta": "—",
+   "95 % CI": "—",
+   "Holm p (3)": "—",
+   "Holm p (18)": "—"
+  },
+  {
+   "model": "qwen08b",
+   "pos": "M",
+   "n adm.": "0",
+   "mean r_O": "—",
+   "mean r_pos": "—",
+   "delta": "—",
+   "95 % CI": "—",
+   "Holm p (3)": "—",
+   "Holm p (18)": "—"
+  },
+  {
+   "model": "qwen08b",
+   "pos": "E",
+   "n adm.": "11",
+   "mean r_O": "0.02",
+   "mean r_pos": "0.15",
+   "delta": "+0.127",
+   "95 % CI": "[−0.018, +0.318]",
+   "Holm p (3)": "0.14",
+   "Holm p (18)": "0.41"
+  },
+  {
+   "model": "qwen2b",
+   "pos": "S",
+   "n adm.": "0",
+   "mean r_O": "—",
+   "mean r_pos": "—",
+   "delta": "—",
+   "95 % CI": "—",
+   "Holm p (3)": "—",
+   "Holm p (18)": "—"
+  },
+  {
+   "model": "qwen2b",
+   "pos": "M",
+   "n adm.": "0",
+   "mean r_O": "—",
+   "mean r_pos": "—",
+   "delta": "—",
+   "95 % CI": "—",
+   "Holm p (3)": "—",
+   "Holm p (18)": "—"
+  },
+  {
+   "model": "qwen2b",
+   "pos": "E",
+   "n adm.": "6",
+   "mean r_O": "0.10",
+   "mean r_pos": "0.68",
+   "delta": "**+0.583**",
+   "95 % CI": "[+0.300, +0.850]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen9b",
+   "pos": "S",
+   "n adm.": "23",
+   "mean r_O": "0.20",
+   "mean r_pos": "0.69",
+   "delta": "**+0.487**",
+   "95 % CI": "[+0.326, +0.643]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen9b",
+   "pos": "M",
+   "n adm.": "83",
+   "mean r_O": "0.18",
+   "mean r_pos": "0.43",
+   "delta": "**+0.254**",
+   "95 % CI": "[+0.180, +0.333]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen9b",
+   "pos": "E",
+   "n adm.": "125",
+   "mean r_O": "0.18",
+   "mean r_pos": "0.65",
+   "delta": "**+0.467**",
+   "95 % CI": "[+0.402, +0.532]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen27b",
+   "pos": "S",
+   "n adm.": "117",
+   "mean r_O": "0.22",
+   "mean r_pos": "0.59",
+   "delta": "**+0.362**",
+   "95 % CI": "[+0.302, +0.424]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen27b",
+   "pos": "M",
+   "n adm.": "105",
+   "mean r_O": "0.23",
+   "mean r_pos": "0.45",
+   "delta": "**+0.218**",
+   "95 % CI": "[+0.159, +0.280]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "qwen27b",
+   "pos": "E",
+   "n adm.": "127",
+   "mean r_O": "0.22",
+   "mean r_pos": "0.70",
+   "delta": "**+0.485**",
+   "95 % CI": "[+0.419, +0.550]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "llama",
+   "pos": "S",
+   "n adm.": "0",
+   "mean r_O": "—",
+   "mean r_pos": "—",
+   "delta": "—",
+   "95 % CI": "—",
+   "Holm p (3)": "—",
+   "Holm p (18)": "—"
+  },
+  {
+   "model": "llama",
+   "pos": "M",
+   "n adm.": "2",
+   "mean r_O": "0.10",
+   "mean r_pos": "0.05",
+   "delta": "−0.050",
+   "95 % CI": "[−0.250, +0.100]",
+   "Holm p (3)": "1.0",
+   "Holm p (18)": "1.0"
+  },
+  {
+   "model": "llama",
+   "pos": "E",
+   "n adm.": "57",
+   "mean r_O": "0.03",
+   "mean r_pos": "0.31",
+   "delta": "**+0.282**",
+   "95 % CI": "[+0.172, +0.398]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "gemma",
+   "pos": "S",
+   "n adm.": "39",
+   "mean r_O": "0.05",
+   "mean r_pos": "0.16",
+   "delta": "**+0.115**",
+   "95 % CI": "[+0.023, +0.226]",
+   "Holm p (3)": "0.010",
+   "Holm p (18)": "0.042"
+  },
+  {
+   "model": "gemma",
+   "pos": "M",
+   "n adm.": "95",
+   "mean r_O": "0.04",
+   "mean r_pos": "0.14",
+   "delta": "**+0.091**",
+   "95 % CI": "[+0.037, +0.148]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "gemma",
+   "pos": "E",
+   "n adm.": "125",
+   "mean r_O": "0.04",
+   "mean r_pos": "0.22",
+   "delta": "**+0.175**",
+   "95 % CI": "[+0.113, +0.241]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  },
+  {
+   "model": "phi",
+   "pos": "S",
+   "n adm.": "0",
+   "mean r_O": "—",
+   "mean r_pos": "—",
+   "delta": "—",
+   "95 % CI": "—",
+   "Holm p (3)": "—",
+   "Holm p (18)": "—"
+  },
+  {
+   "model": "phi",
+   "pos": "M",
+   "n adm.": "3",
+   "mean r_O": "0.00",
+   "mean r_pos": "0.00",
+   "delta": "+0.000",
+   "95 % CI": "[0, 0]",
+   "Holm p (3)": "1.0",
+   "Holm p (18)": "1.0"
+  },
+  {
+   "model": "phi",
+   "pos": "E",
+   "n adm.": "100",
+   "mean r_O": "0.04",
+   "mean r_pos": "0.17",
+   "delta": "**+0.125**",
+   "95 % CI": "[+0.078, +0.177]",
+   "Holm p (3)": "< 1e-4",
+   "Holm p (18)": "< 1e-4"
+  }
+ ],
+ "notes": "Holm p (3) is within-model over the three positions; the last column is Holm over all 18 gated tests."
+}

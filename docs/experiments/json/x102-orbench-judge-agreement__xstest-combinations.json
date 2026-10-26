@@ -1,0 +1,119 @@
+{
+ "title": "Selected voting combinations on XSTest, by rank",
+ "source": "experiments/x102-orbench-judge-agreement.md",
+ "columns": [
+  "combination",
+  "n",
+  "agreement",
+  "κ",
+  "sens.",
+  "spec."
+ ],
+ "rows": [
+  {
+   "combination": "GLM or GuardReasoner (rank 1)",
+   "n": "2,244",
+   "agreement": "0.952",
+   "κ": "0.904",
+   "sens.": "0.968",
+   "spec.": "0.935"
+  },
+  {
+   "combination": "GuardReasoner alone (rank 2)",
+   "n": "2,244",
+   "agreement": "0.951",
+   "κ": "0.901",
+   "sens.": "0.959",
+   "spec.": "0.942"
+  },
+  {
+   "combination": "WildGuard or GuardReasoner (rank 3)",
+   "n": "2,244",
+   "agreement": "0.951",
+   "κ": "0.901",
+   "sens.": "0.969",
+   "spec.": "0.931"
+  },
+  {
+   "combination": "Luna or GuardReasoner (rank 4)",
+   "n": "2,244",
+   "agreement": "0.950",
+   "κ": "0.900",
+   "sens.": "0.962",
+   "spec.": "0.937"
+  },
+  {
+   "combination": "majority of DeepSeek, GLM, WildGuard, GuardReasoner (rank 6; best 4-way, 73 ties)",
+   "n": "2,171",
+   "agreement": "0.950",
+   "κ": "0.900",
+   "sens.": "0.946",
+   "spec.": "0.953"
+  },
+  {
+   "combination": "majority of GLM, WildGuard, GuardReasoner (rank 17; best 3-way)",
+   "n": "2,244",
+   "agreement": "0.947",
+   "κ": "0.893",
+   "sens.": "0.946",
+   "spec.": "0.948"
+  },
+  {
+   "combination": "GLM or WildGuard (rank 18; best without GuardReasoner)",
+   "n": "2,244",
+   "agreement": "0.943",
+   "κ": "0.887",
+   "sens.": "0.953",
+   "spec.": "0.933"
+  },
+  {
+   "combination": "WildGuard and GuardReasoner (rank 26; best \"both\")",
+   "n": "2,244",
+   "agreement": "0.940",
+   "κ": "0.881",
+   "sens.": "0.928",
+   "spec.": "0.953"
+  },
+  {
+   "combination": "WildGuard alone (rank 27)",
+   "n": "2,244",
+   "agreement": "0.940",
+   "κ": "0.880",
+   "sens.": "0.939",
+   "spec.": "0.942"
+  },
+  {
+   "combination": "majority of incumbent, GLM, WildGuard, Qwen3Guard, GuardReasoner (rank 40; best 5-way)",
+   "n": "2,244",
+   "agreement": "0.935",
+   "κ": "0.870",
+   "sens.": "0.926",
+   "spec.": "0.945"
+  },
+  {
+   "combination": "majority of all seven (rank 77)",
+   "n": "2,244",
+   "agreement": "0.926",
+   "κ": "0.851",
+   "sens.": "0.906",
+   "spec.": "0.947"
+  },
+  {
+   "combination": "majority of DeepSeek, GLM, Luna (rank 116; Reference A)",
+   "n": "2,244",
+   "agreement": "0.919",
+   "κ": "0.839",
+   "sens.": "0.887",
+   "spec.": "0.954"
+  },
+  {
+   "combination": "DeepSeek and Luna (rank 141)",
+   "n": "2,244",
+   "agreement": "0.904",
+   "κ": "0.809",
+   "sens.": "0.841",
+   "spec.": "0.971"
+  }
+ ],
+ "notes": "Sensitivity and specificity are for refusal against the human label."
+}

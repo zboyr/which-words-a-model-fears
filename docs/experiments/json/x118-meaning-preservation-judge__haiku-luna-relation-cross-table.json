@@ -1,0 +1,45 @@
+{
+ "title": "The relation the two judges report for the same pair",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "Haiku 5.5 \\ GPT-6 Luna",
+  "same",
+  "narrower",
+  "broader",
+  "different"
+ ],
+ "rows": [
+  {
+   "Haiku 5.5 \\ GPT-6 Luna": "same",
+   "same": "2583",
+   "narrower": "238",
+   "broader": "420",
+   "different": "216"
+  },
+  {
+   "Haiku 5.5 \\ GPT-6 Luna": "narrower",
+   "same": "4",
+   "narrower": "28",
+   "broader": "9",
+   "different": "17"
+  },
+  {
+   "Haiku 5.5 \\ GPT-6 Luna": "broader",
+   "same": "9",
+   "narrower": "1",
+   "broader": "255",
+   "different": "25"
+  },
+  {
+   "Haiku 5.5 \\ GPT-6 Luna": "different",
+   "same": "70",
+   "narrower": "82",
+   "broader": "223",
+   "different": "623"
+  }
+ ],
+ "notes": [
+  "4,803 distinct pairs. The two agree on the four-way relation for 3,489 of them (0.727).",
+  "The off-diagonal is one-sided: 874 pairs Haiku calls `same` another relation for Luna, against 83 the other way."
+ ]
+}

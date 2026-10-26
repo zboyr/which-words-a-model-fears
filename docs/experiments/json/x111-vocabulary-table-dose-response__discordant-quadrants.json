@@ -1,0 +1,42 @@
+{
+ "title": "Discordant words: Δ_EO by quadrant (four words each)",
+ "source": "experiments/x111-vocabulary-table-dose-response.md",
+ "columns": [
+  "quadrant",
+  "words",
+  "benign test prompts (32) Δ_EO [95% CI]",
+  "harmful test prompts (32) Δ_EO [95% CI]",
+  "pooled (64) Δ_EO [95% CI]"
+ ],
+ "rows": [
+  {
+   "quadrant": "high in BP only",
+   "words": "abandon, playmate, crass, unleash",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.264 [+0.209, +0.320]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.152 [+0.096, +0.208]",
+   "pooled (64) Δ_EO [95% CI]": "+0.208 [+0.168, +0.247]"
+  },
+  {
+   "quadrant": "low in BP only",
+   "words": "intellectuals, parallels, ironically, granddad",
+   "benign test prompts (32) Δ_EO [95% CI]": "−0.099 [−0.161, −0.036]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "−0.056 [−0.113, +0.002]",
+   "pooled (64) Δ_EO [95% CI]": "−0.077 [−0.120, −0.035]"
+  },
+  {
+   "quadrant": "high in benign only",
+   "words": "proteins, pizzeria, artichokes, phytoplankton",
+   "benign test prompts (32) Δ_EO [95% CI]": "−0.034 [−0.107, +0.041]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.070 [+0.005, +0.137]",
+   "pooled (64) Δ_EO [95% CI]": "+0.018 [−0.032, +0.067]"
+  },
+  {
+   "quadrant": "low in benign only",
+   "words": "sweetened, supplementary, mockup, nonstop",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.121 [+0.064, +0.175]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.004 [−0.059, +0.068]",
+   "pooled (64) Δ_EO [95% CI]": "+0.062 [+0.021, +0.104]"
+  }
+ ],
+ "notes": "Quadrants: BP ≤ p5 with benign ≥ p25 (low in BP only); benign ≤ p5 with BP ≥ p25 (low in benign only); BP ≥ p95 with benign ≤ p75 (high in BP only); benign ≥ p95 with BP ≤ p75 (high in benign only). results.json → discordant → quadrant_means."
+}

@@ -1,0 +1,66 @@
+{
+ "title": "Reach of x106's substitution rule: units with an S text and why the others have none, on the x108 Toxic and XSTest-contrast units next to x106's Hard-1K and XSTest-safe units",
+ "source": "experiments/x108-toxic-lexical-carrier-specificity.md",
+ "columns": [
+  "population",
+  "units",
+  "with S",
+  "no harm-free substitute",
+  "drafts failed the checks",
+  "provider refused",
+  "hedge units (R)",
+  "unit in x83 lexicon: all / without S / with S",
+  "most frequent units without S",
+  "most frequent substitutions"
+ ],
+ "rows": [
+  {
+   "population": "Hard-1K (x106)",
+   "units": 476,
+   "with S": "387 (0.813)",
+   "no harm-free substitute": "57 (0.120)",
+   "drafts failed the checks": "32 (0.067)",
+   "provider refused": "0 (0.000)",
+   "hedge units (R)": 56,
+   "unit in x83 lexicon: all / without S / with S": "0.06 / 0.12 / 0.05",
+   "most frequent units without S": "`self-harm` (8), `gun` (3), `illegal` (3), `questionable` (3), `sexual` (3), `scam` (2), `gambling` (2), `intimate` (2)",
+   "most frequent substitutions": "`restricted` → `regulated` (6), `controversial` → `contentious` (5), `bomb` → `device` (4), `id` → `identification card` (4), `detection` → `notice` (3), `questionable` → `debatable` (3)"
+  },
+  {
+   "population": "XSTest safe (x106)",
+   "units": 100,
+   "with S": "86 (0.860)",
+   "no harm-free substitute": "9 (0.090)",
+   "drafts failed the checks": "5 (0.050)",
+   "provider refused": "0 (0.000)",
+   "hedge units (R)": 1,
+   "unit in x83 lexicon: all / without S / with S": "0.06 / 0.07 / 0.06",
+   "most frequent units without S": "`ball` (1), `best` (1), `fire` (1), `next` (1), `obliterate` (1), `black` (1), `strike` (1), `bombing` (1)",
+   "most frequent substitutions": "`what's` → `what is` (5), `best` → `most effective` (5), `good` → `effective` (3), `buy` → `purchase` (2), `wife` → `spouse` (2), `kill` → `terminate` (1)"
+  },
+  {
+   "population": "Toxic (x108)",
+   "units": 619,
+   "with S": "394 (0.637)",
+   "no harm-free substitute": "154 (0.249)",
+   "drafts failed the checks": "71 (0.115)",
+   "provider refused": "0 (0.000)",
+   "hedge units (R)": 23,
+   "unit in x83 lexicon: all / without S / with S": "0.03 / 0.04 / 0.03",
+   "most frequent units without S": "`self-harm` (32), `sexual` (21), `negatively` (5), `self-harm techniques` (4), `activities without` (3), `what steps` (3), `harm` (3), `to self-harm` (3)",
+   "most frequent substitutions": "`i create` → `i make` (4), `without` → `while not` (4), `what techniques` → `what approaches` (3), `false` → `fabricated` (3), `some strategies` → `some approaches` (3), `negative` → `critical` (3)"
+  },
+  {
+   "population": "XSTest contrast (x108)",
+   "units": 100,
+   "with S": "50 (0.500)",
+   "no harm-free substitute": "43 (0.430)",
+   "drafts failed the checks": "7 (0.070)",
+   "provider refused": "0 (0.000)",
+   "hedge units (R)": 0,
+   "unit in x83 lexicon: all / without S / with S": "0.12 / 0.14 / 0.10",
+   "most frequent units without S": "`kill` (4), `a murder` (2), `killing` (2), `poison` (2), `terminate` (1), `execute` (1), `executing` (1), `beat` (1)",
+   "most frequent substitutions": "`shoot` → `photograph` (2), `crush` → `compress` (2), `kill` → `end the life of` (1), `terminating` → `removing` (1), `woman` → `lady` (1), `blow` → `demolish` (1)"
+  }
+ ]
+}

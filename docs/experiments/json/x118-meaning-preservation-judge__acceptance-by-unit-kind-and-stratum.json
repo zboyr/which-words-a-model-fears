@@ -1,0 +1,133 @@
+{
+ "title": "Acceptance by unit kind (content word or hedge phrase) and by stratum",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "bucket",
+  "share accepted [Wilson 95%]"
+ ],
+ "rows": [
+  {
+   "bucket": "x106/S/content",
+   "share accepted [Wilson 95%]": "0.667 [0.620, 0.710] (278/417)"
+  },
+  {
+   "bucket": "x106/S/hedge",
+   "share accepted [Wilson 95%]": "0.143 [0.074, 0.257] (8/56)"
+  },
+  {
+   "bucket": "x106/C/content",
+   "share accepted [Wilson 95%]": "0.856 [0.822, 0.885] (405/473)"
+  },
+  {
+   "bucket": "x106/C/hedge",
+   "share accepted [Wilson 95%]": "0.842 [0.726, 0.915] (48/57)"
+  },
+  {
+   "bucket": "x113/S/content",
+   "share accepted [Wilson 95%]": "0.397 [0.378, 0.417] (964/2426)"
+  },
+  {
+   "bucket": "x113/S/hedge",
+   "share accepted [Wilson 95%]": "0.053 [0.038, 0.074] (31/585)"
+  },
+  {
+   "bucket": "x113/C/content",
+   "share accepted [Wilson 95%]": "0.800 [0.784, 0.815] (2070/2589)"
+  },
+  {
+   "bucket": "x113/C/hedge",
+   "share accepted [Wilson 95%]": "0.833 [0.800, 0.861] (488/586)"
+  },
+  {
+   "bucket": "x108/S/content",
+   "share accepted [Wilson 95%]": "0.603 [0.556, 0.649] (254/421)"
+  },
+  {
+   "bucket": "x108/S/hedge",
+   "share accepted [Wilson 95%]": "0.190 [0.077, 0.400] (4/21)"
+  },
+  {
+   "bucket": "x106/C/high",
+   "share accepted [Wilson 95%]": "0.875 [0.830, 0.910] (231/264)"
+  },
+  {
+   "bucket": "x106/C/low",
+   "share accepted [Wilson 95%]": "0.767 [0.669, 0.842] (69/90)"
+  },
+  {
+   "bucket": "x106/C/mid",
+   "share accepted [Wilson 95%]": "0.869 [0.812, 0.911] (153/176)"
+  },
+  {
+   "bucket": "x106/R/high",
+   "share accepted [Wilson 95%]": "0.067 [0.018, 0.213] (2/30)"
+  },
+  {
+   "bucket": "x106/R/low",
+   "share accepted [Wilson 95%]": "0.200 [0.036, 0.624] (1/5)"
+  },
+  {
+   "bucket": "x106/R/mid",
+   "share accepted [Wilson 95%]": "0.045 [0.008, 0.218] (1/22)"
+  },
+  {
+   "bucket": "x106/S/high",
+   "share accepted [Wilson 95%]": "0.519 [0.452, 0.585] (111/214)"
+  },
+  {
+   "bucket": "x106/S/low",
+   "share accepted [Wilson 95%]": "0.781 [0.693, 0.849] (82/105)"
+  },
+  {
+   "bucket": "x106/S/mid",
+   "share accepted [Wilson 95%]": "0.604 [0.525, 0.678] (93/154)"
+  },
+  {
+   "bucket": "x108/R/high",
+   "share accepted [Wilson 95%]": "0.091 [0.025, 0.278] (2/22)"
+  },
+  {
+   "bucket": "x108/R/mid",
+   "share accepted [Wilson 95%]": "1.000 [0.207, 1.000] (1/1)"
+  },
+  {
+   "bucket": "x108/S/high",
+   "share accepted [Wilson 95%]": "0.580 [0.532, 0.627] (242/417)"
+  },
+  {
+   "bucket": "x108/S/low",
+   "share accepted [Wilson 95%]": "0.333 [0.061, 0.792] (1/3)"
+  },
+  {
+   "bucket": "x108/S/mid",
+   "share accepted [Wilson 95%]": "0.625 [0.427, 0.788] (15/24)"
+  },
+  {
+   "bucket": "x113/C/core",
+   "share accepted [Wilson 95%]": "0.849 [0.833, 0.863] (1867/2200)"
+  },
+  {
+   "bucket": "x113/C/llama_extra",
+   "share accepted [Wilson 95%]": "0.847 [0.786, 0.892] (149/176)"
+  },
+  {
+   "bucket": "x113/C/xstest",
+   "share accepted [Wilson 95%]": "0.678 [0.645, 0.710] (542/799)"
+  },
+  {
+   "bucket": "x113/S/core",
+   "share accepted [Wilson 95%]": "0.243 [0.225, 0.262] (503/2073)"
+  },
+  {
+   "bucket": "x113/S/llama_extra",
+   "share accepted [Wilson 95%]": "0.503 [0.428, 0.577] (85/169)"
+  },
+  {
+   "bucket": "x113/S/xstest",
+   "share accepted [Wilson 95%]": "0.529 [0.494, 0.564] (407/769)"
+  }
+ ],
+ "notes": [
+  "x106 / x108 strata are the Qwen3.5-4B projection bands low / mid / high; x113 strata are its populations core / llama_extra / xstest."
+ ]
+}

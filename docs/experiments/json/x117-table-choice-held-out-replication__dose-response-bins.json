@@ -1,0 +1,88 @@
+{
+ "title": "Dose-response on the 64 x117 prompts over the eight concordant bins (refusal2, Δ_EO = r(E) − r(O), mean over the bin's three words)",
+ "source": "experiments/x117-table-choice-held-out-replication.md",
+ "columns": [
+  "bin",
+  "words",
+  "BP table (sd)",
+  "benign test prompts (32) Δ_EO [95% CI]",
+  "harmful test prompts (32) Δ_EO [95% CI]",
+  "pooled (64) Δ_EO [95% CI]",
+  "x111 pooled (64) Δ_EO"
+ ],
+ "rows": [
+  {
+   "bin": "[0,1)",
+   "words": "friendliest, quirky, sonnets",
+   "BP table (sd)": "−1.35",
+   "benign test prompts (32) Δ_EO [95% CI]": "−0.157 [−0.251, −0.063]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "−0.174 [−0.248, −0.097]",
+   "pooled (64) Δ_EO [95% CI]": "−0.165 [−0.226, −0.105]",
+   "x111 pooled (64) Δ_EO": "−0.142"
+  },
+  {
+   "bin": "[1,5)",
+   "words": "gracias, geeks, incisive",
+   "BP table (sd)": "−0.56",
+   "benign test prompts (32) Δ_EO [95% CI]": "−0.136 [−0.223, −0.051]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "−0.060 [−0.123, +0.003]",
+   "pooled (64) Δ_EO [95% CI]": "−0.098 [−0.151, −0.046]",
+   "x111 pooled (64) Δ_EO": "−0.108"
+  },
+  {
+   "bin": "[5,25)",
+   "words": "spectrum, possibility, scrolling",
+   "BP table (sd)": "−0.31",
+   "benign test prompts (32) Δ_EO [95% CI]": "−0.112 [−0.181, −0.042]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "−0.037 [−0.097, +0.021]",
+   "pooled (64) Δ_EO [95% CI]": "−0.075 [−0.120, −0.029]",
+   "x111 pooled (64) Δ_EO": "−0.057"
+  },
+  {
+   "bin": "[25,50)",
+   "words": "operations, mobilised, mom",
+   "BP table (sd)": "−0.14",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.025 [−0.058, +0.107]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.020 [−0.047, +0.093]",
+   "pooled (64) Δ_EO [95% CI]": "+0.023 [−0.030, +0.078]",
+   "x111 pooled (64) Δ_EO": "+0.031"
+  },
+  {
+   "bin": "[50,75)",
+   "words": "tingling, controlling, maximizes",
+   "BP table (sd)": "+0.03",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.040 [−0.034, +0.109]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.024 [−0.037, +0.081]",
+   "pooled (64) Δ_EO [95% CI]": "+0.032 [−0.014, +0.077]",
+   "x111 pooled (64) Δ_EO": "+0.052"
+  },
+  {
+   "bin": "[75,95)",
+   "words": "tarnish, interfered, projectile",
+   "BP table (sd)": "+0.17",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.152 [+0.084, +0.220]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.102 [+0.040, +0.165]",
+   "pooled (64) Δ_EO [95% CI]": "+0.127 [+0.082, +0.173]",
+   "x111 pooled (64) Δ_EO": "+0.128"
+  },
+  {
+   "bin": "[95,99)",
+   "words": "electrocuted, kamikaze, putrid",
+   "BP table (sd)": "+0.38",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.233 [+0.172, +0.298]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.226 [+0.155, +0.299]",
+   "pooled (64) Δ_EO [95% CI]": "+0.229 [+0.182, +0.278]",
+   "x111 pooled (64) Δ_EO": "+0.234"
+  },
+  {
+   "bin": "[99,100]",
+   "words": "misogynist, assassinations, cocaine",
+   "BP table (sd)": "+0.74",
+   "benign test prompts (32) Δ_EO [95% CI]": "+0.341 [+0.279, +0.404]",
+   "harmful test prompts (32) Δ_EO [95% CI]": "+0.392 [+0.310, +0.478]",
+   "pooled (64) Δ_EO [95% CI]": "+0.367 [+0.314, +0.420]",
+   "x111 pooled (64) Δ_EO": "+0.336"
+  }
+ ],
+ "notes": "Δ_EO per bin is the mean over its three words of the per-word Δ_EO; CI from the prompt-level paired bootstrap (10,000 draws; pooled resampled within each population). benign: 7/7 adjacent pairs in order, top − bottom +0.498 [+0.424, +0.567]; harmful: 7/7 adjacent pairs in order, top − bottom +0.566 [+0.496, +0.637]; pooled: 7/7 adjacent pairs in order, top − bottom +0.532 [+0.480, +0.583]. x111 column from data/runs/x117/results_check_x111.json (x111's analysed cohort)."
+}

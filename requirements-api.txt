@@ -1,0 +1,16 @@
+# CPU-only environment: OpenRouter API stages (prompt drafter, refusal and
+# word-uptake judges), cohort selection, statistics, bootstrap and figures.
+# Scripts that import torch or transformers use requirements.txt instead.
+requests==2.32.3
+urllib3==2.2.3
+certifi==2024.8.30
+charset-normalizer==3.4.0
+idna==3.10
+numpy==2.2.6
+scipy==1.14.1
+matplotlib==3.10.8
+wordfreq==3.1.1
+nltk==3.9.2
+datasets==4.8.4
+huggingface_hub==0.35.3
+pytest==9.0.3

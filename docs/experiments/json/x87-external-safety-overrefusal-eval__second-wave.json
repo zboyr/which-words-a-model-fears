@@ -1,0 +1,63 @@
+{
+ "title": "Second wave: edited − base at x86 doses −1.25/−1.5/−2/−3 and x75 scales −5/−6/−7",
+ "source": "experiments/x87-external-safety-overrefusal-eval.md",
+ "columns": [
+  "edited − base",
+  "Hard-1K refusal",
+  "Toxic refusal",
+  "StrongREJECT",
+  "IFEval strict"
+ ],
+ "rows": [
+  {
+   "edited − base": "`x86_m125` (−1.25)",
+   "Hard-1K refusal": "−0.0887 [up −0.0713]",
+   "Toxic refusal": "−0.0198 [low −0.0351]",
+   "StrongREJECT": "+0.0141 [up +0.0342]",
+   "IFEval strict": "+0.0222 [low +0.0000]"
+  },
+  {
+   "edited − base": "`x86_m150` (−1.5)",
+   "Hard-1K refusal": "−0.1001 [up −0.0819]",
+   "Toxic refusal": "−0.0198 [low −0.0351]",
+   "StrongREJECT": "+0.0122 [up +0.0317]",
+   "IFEval strict": "+0.0259 [low +0.0000]"
+  },
+  {
+   "edited − base": "`x86_m200` (−2.0)",
+   "Hard-1K refusal": "−0.1448 [up −0.1228]",
+   "Toxic refusal": "−0.0305 [low −0.0489]",
+   "StrongREJECT": "+0.0222 [up +0.0452]",
+   "IFEval strict": "+0.0092 [low −0.0185]"
+  },
+  {
+   "edited − base": "`x86_m300` (−3.0)",
+   "Hard-1K refusal": "−0.2108 [up −0.1860]",
+   "Toxic refusal": "**−0.0519 [low −0.0748]**",
+   "StrongREJECT": "+0.0044 [up +0.0228]",
+   "IFEval strict": "+0.0148 [low −0.0166]"
+  },
+  {
+   "edited − base": "`x75_m5` (−5)",
+   "Hard-1K refusal": "−0.1289 [up −0.1069]",
+   "Toxic refusal": "−0.0275 [low −0.0443]",
+   "StrongREJECT": "−0.0039 [up +0.0177]",
+   "IFEval strict": "−0.0222 [low −0.0610]"
+  },
+  {
+   "edited − base": "`x75_m6` (−6)",
+   "Hard-1K refusal": "−0.1539 [up −0.1304]",
+   "Toxic refusal": "−0.0336 [low −0.0519]",
+   "StrongREJECT": "+0.0119 [up +0.0405]",
+   "IFEval strict": "−0.0388 [low −0.0795]"
+  },
+  {
+   "edited − base": "`x75_m7` (−7)",
+   "Hard-1K refusal": "−0.1782 [up −0.1539]",
+   "Toxic refusal": "**−0.0473 [low −0.0702]**",
+   "StrongREJECT": "−0.0039 [up +0.0219]",
+   "IFEval strict": "**−0.0832 [low −0.1312]**"
+  }
+ ],
+ "notes": null
+}

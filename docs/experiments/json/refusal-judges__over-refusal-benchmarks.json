@@ -1,0 +1,97 @@
+{
+ "title": "Over-refusal benchmarks",
+ "source": "refusal-judges.md",
+ "columns": [
+  "Benchmark",
+  "Official judge",
+  "Label space (input)",
+  "Type",
+  "Usable 2026-10",
+  "Human agreement of the judge",
+  "Citation"
+ ],
+ "rows": [
+  {
+   "Benchmark": "**OR-Bench**",
+   "Official judge": "prompted `gpt-4-turbo-2024-04-09` (`response_checker/check_response.py`, temperature 0; alt. Llama-3-70b on Together); keyword list only on the 80K set",
+   "Label space (input)": "3-way `direct_answer` / `direct_refusal` / `indirect_refusal` (prompt + response); parser defaults to `direct_refusal`",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "judge retires 2026-10-23; on OpenRouter at 10 / 30 until then; Llama-3-70b endpoints gone; `bench-llm/or-bench` ships prompts only",
+   "Human agreement of the judge": "**none.** Only keyword-vs-GPT-4 gaps (1.2–2.4%). The human study (100 items) is about prompt moderation",
+   "Citation": "Cui, Chiang, Stoica, Hsieh. ICML 2025. arXiv:2405.20947. github.com/justincui03/or-bench"
+  },
+  {
+   "Benchmark": "**XSTest**",
+   "Official judge": "prompted `gpt-4` (unpinned; collected 2023-09, likely `gpt-4-0613`, **unverified**) + 21-prefix `startswith` matcher",
+   "Label space (input)": "3-way full compliance / full refusal / partial refusal (prompt + response)",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "alias retires 2026-10-23. **Ships 2,250 human-labelled completions (5 models × 450)** with GPT-4 and string-match labels — the only public human-labelled over-refusal responses; `allenai/xstest-response` (449 rows, gated) adds more",
+   "Human agreement of the judge": "paper: human–human 93.8–98.4% (Fleiss κ 0.89–0.97) only. Recomputed from the released CSVs: GPT-4 79.9% three-way / 82.1% binary (partial → refusal); string match 83.9 / 88.4",
+   "Citation": "Röttger et al. NAACL 2024. arXiv:2308.01263. github.com/paul-rottger/xstest"
+  },
+  {
+   "Benchmark": "PHTest",
+   "Official judge": "prompted GPT-4, version unstated; no judge code",
+   "Label space (input)": "3-way XSTest-style",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "unreproducible",
+   "Human agreement of the judge": "none",
+   "Citation": "An et al. COLM 2024. arXiv:2409.00598"
+  },
+  {
+   "Benchmark": "OKTest",
+   "Official judge": "prompted `gpt-4-0613`; no judge code",
+   "Label space (input)": "binary compliance / refusal",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "retires 2026-10-23",
+   "Human agreement of the judge": "none numeric",
+   "Citation": "Shi et al. ACL 2024. arXiv:2401.17633"
+  },
+  {
+   "Benchmark": "FalseReject",
+   "Official judge": "prompted Claude-3.5-Sonnet",
+   "Label space (input)": "3-way Direct Refusal / Full Compliance / **Safe Partial Compliance (= compliance)** — opposite polarity to OR-Bench's `indirect_refusal`",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "judge retired",
+   "Human agreement of the judge": "92.5% vs 9-annotator majority on 500 outputs, no κ",
+   "Citation": "Zhang, Xu, Wu, Reddy. COLM 2025. arXiv:2505.08054"
+  },
+  {
+   "Benchmark": "CoCoNot",
+   "Official judge": "prompted `gpt-3.5-turbo` (paper) / `gpt-4-1106-preview` (script default) with 28 rubrics",
+   "Label space (input)": "binary acceptable (noncompliance) / unacceptable",
+   "Type": "REFUSAL, broader \"contextual noncompliance\"",
+   "Usable 2026-10": "both retire 2026-10-23",
+   "Human agreement of the judge": "93% accurate on 300, Fleiss κ 0.63",
+   "Citation": "Brahman et al. NeurIPS 2024 D&B. arXiv:2407.12043"
+  },
+  {
+   "Benchmark": "MORBench",
+   "Official judge": "prompted Llama-3.1-70B + GPT-4o, OR-Bench-style labels",
+   "Label space (input)": "3-way",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "yes",
+   "Human agreement of the judge": "none",
+   "Citation": "Pan et al. EMNLP 2025. arXiv:2505.18325"
+  },
+  {
+   "Benchmark": "ORFuzz / OR-Judge",
+   "Official judge": "two LoRA adapters on Qwen2.5-14B-Instruct (GitHub only)",
+   "Label space (input)": "toxicity prob + answered prob",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "yes, 14B",
+   "Human agreement of the judge": "F1 0.967 vs 20-rater labels (Fleiss κ 0.552)",
+   "Citation": "Zhang et al. arXiv:2508.11222. github.com/HotBento/ORFuzz"
+  },
+  {
+   "Benchmark": "Hasan & Biswas 2026",
+   "Official judge": "dual open judges Llama-3.3-70B + Qwen2.5-32B; re-judges OR-Bench and XSTest",
+   "Label space (input)": "Refusal / Safe Compliance / Unsafe Compliance",
+   "Type": "REFUSAL",
+   "Usable 2026-10": "yes",
+   "Human agreement of the judge": "inter-judge κ 0.847; 50 disputed cases: 94% humans side with Llama, 82% with Qwen",
+   "Citation": "arXiv:2605.05427"
+  }
+ ],
+ "notes": null
+}

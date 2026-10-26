@@ -1,0 +1,67 @@
+{
+ "title": "Pooled over the ten words, per HP stratum, on the 15 top-up prompts and on the 15 excluded x85 prompts (`refusal2`)",
+ "source": "experiments/x110-table-courage-words.md",
+ "columns": [
+  "prompts",
+  "n",
+  "r(O)",
+  "mean r(E)",
+  "mean r(N)",
+  "Δ_EN [95% CI]",
+  "Δ_EO [95% CI]",
+  "r(N) − r(O) [95% CI]"
+ ],
+ "rows": [
+  {
+   "prompts": "HP r0.2-0.5",
+   "n": "32",
+   "r(O)": "0.397",
+   "mean r(E)": "0.170",
+   "mean r(N)": "0.348",
+   "Δ_EN [95% CI]": "−0.177 [−0.229, −0.128]",
+   "Δ_EO [95% CI]": "−0.227 [−0.288, −0.166]",
+   "r(N) − r(O) [95% CI]": "−0.049 [−0.103, +0.005]"
+  },
+  {
+   "prompts": "HP r0.6-0.9",
+   "n": "32",
+   "r(O)": "0.744",
+   "mean r(E)": "0.506",
+   "mean r(N)": "0.764",
+   "Δ_EN [95% CI]": "−0.259 [−0.348, −0.172]",
+   "Δ_EO [95% CI]": "−0.238 [−0.337, −0.133]",
+   "r(N) − r(O) [95% CI]": "+0.021 [−0.047, +0.095]"
+  },
+  {
+   "prompts": "HP r1.0",
+   "n": "32",
+   "r(O)": "0.997",
+   "mean r(E)": "0.864",
+   "mean r(N)": "0.987",
+   "Δ_EN [95% CI]": "−0.123 [−0.191, −0.062]",
+   "Δ_EO [95% CI]": "−0.133 [−0.203, −0.072]",
+   "r(N) − r(O) [95% CI]": "−0.010 [−0.022, −0.001]"
+  },
+  {
+   "prompts": "HP, the 15 top-up prompts (included above)",
+   "n": "15",
+   "r(O)": "0.460",
+   "mean r(E)": "0.165",
+   "mean r(N)": "0.430",
+   "Δ_EN [95% CI]": "−0.265 [−0.384, −0.157]",
+   "Δ_EO [95% CI]": "−0.295 [−0.402, −0.186]",
+   "r(N) − r(O) [95% CI]": "−0.030 [−0.126, +0.087]"
+  },
+  {
+   "prompts": "HP, the 15 x85 prompts (excluded)",
+   "n": "15",
+   "r(O)": "0.467",
+   "mean r(E)": "0.279",
+   "mean r(N)": "0.441",
+   "Δ_EN [95% CI]": "−0.162 [−0.259, −0.069]",
+   "Δ_EO [95% CI]": "−0.188 [−0.292, −0.087]",
+   "r(N) − r(O) [95% CI]": "−0.026 [−0.100, +0.045]"
+  }
+ ],
+ "notes": "Primary prompt set: HP strata of the 96 prompts (the 81 that are not x85 prompts plus the 15 top-up prompts; 32 / 32 / 32). The top-up row is the 15 added prompts on their own (11 in r0.2-0.5, 4 in r0.6-0.9), bootstrapped within the 15; the last row is the 15 excluded prompts on their own (11 in r0.2-0.5, 4 in r0.6-0.9). Largest Δ_EN bootstrap p over these rows: 0.0004. Source: data/runs/x110/results.json, `pooled`."
+}

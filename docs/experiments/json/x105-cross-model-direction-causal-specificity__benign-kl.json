@@ -1,0 +1,79 @@
+{
+ "title": "Benign KL of the transferred dose and the matched control",
+ "source": "experiments/x105-cross-model-direction-causal-specificity.md",
+ "columns": [
+  "model",
+  "direction norms (tbg−1 / tbg)",
+  "benign KL at −1.5",
+  "KL-matched random dose",
+  "its benign KL",
+  "random draw cosine to target"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "direction norms (tbg−1 / tbg)": "0.90 / 0.89",
+   "benign KL at −1.5": "0.117",
+   "KL-matched random dose": "−2.50 (1.7×)",
+   "its benign KL": "0.122",
+   "random draw cosine to target": "4e-17"
+  },
+  {
+   "model": "2B",
+   "direction norms (tbg−1 / tbg)": "4.51 / 4.91",
+   "benign KL at −1.5": "0.614",
+   "KL-matched random dose": "−6.50 (4.3×)",
+   "its benign KL": "0.609",
+   "random draw cosine to target": "1e-17"
+  },
+  {
+   "model": "4B",
+   "direction norms (tbg−1 / tbg)": "6.35 / 7.34",
+   "benign KL at −1.5": "0.300",
+   "KL-matched random dose": "−5.50 (3.7×)",
+   "its benign KL": "0.306",
+   "random draw cosine to target": "2e-17"
+  },
+  {
+   "model": "9B",
+   "direction norms (tbg−1 / tbg)": "24.69 / 26.95",
+   "benign KL at −1.5": "0.290",
+   "KL-matched random dose": "−5.50 (3.7×)",
+   "its benign KL": "0.303",
+   "random draw cosine to target": "3e-17"
+  },
+  {
+   "model": "27B",
+   "direction norms (tbg−1 / tbg)": "42.61 / 42.10",
+   "benign KL at −1.5": "0.416",
+   "KL-matched random dose": "−7.00 (4.7×)",
+   "its benign KL": "0.402",
+   "random draw cosine to target": "3e-17"
+  },
+  {
+   "model": "Llama",
+   "direction norms (tbg−1 / tbg)": "4.55 / 4.49",
+   "benign KL at −1.5": "0.141",
+   "KL-matched random dose": "−5.00 (3.3×)",
+   "its benign KL": "0.137",
+   "random draw cosine to target": "2e-17"
+  },
+  {
+   "model": "Gemma",
+   "direction norms (tbg−1 / tbg)": "9.11 / 8.94",
+   "benign KL at −1.5": "0.703",
+   "KL-matched random dose": "−4.38 (2.9×)",
+   "its benign KL": "0.722",
+   "random draw cosine to target": "6e-17"
+  },
+  {
+   "model": "Phi",
+   "direction norms (tbg−1 / tbg)": "15.31 / 18.90",
+   "benign KL at −1.5": "0.124",
+   "KL-matched random dose": "−4.25 (2.8×)",
+   "its benign KL": "0.119",
+   "random draw cosine to target": "5e-17"
+  }
+ ],
+ "notes": null
+}

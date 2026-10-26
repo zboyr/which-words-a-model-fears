@@ -1,0 +1,79 @@
+{
+ "title": "Incumbent sensitivity / specificity for refusal against Reference A and Reference B, by model",
+ "source": "experiments/x102-orbench-judge-agreement.md",
+ "columns": [
+  "model",
+  "n ref. A refusals (Hard)",
+  "sens. (A)",
+  "spec. (A)",
+  "sens. (B)",
+  "spec. (B)"
+ ],
+ "rows": [
+  {
+   "model": "Qwen3.5-4B",
+   "n ref. A refusals (Hard)": "1,136",
+   "sens. (A)": "0.974 (0.999)",
+   "spec. (A)": "0.871 (1.000)",
+   "sens. (B)": "0.979 (1.000)",
+   "spec. (B)": "0.883 (0.800)"
+  },
+  {
+   "model": "Qwen3.5-0.8B",
+   "n ref. A refusals (Hard)": "219",
+   "sens. (A)": "0.963 (0.970)",
+   "spec. (A)": "0.850 (0.830)",
+   "sens. (B)": "0.944 (0.986)",
+   "spec. (B)": "0.812 (0.754)"
+  },
+  {
+   "model": "Qwen3.5-2B",
+   "n ref. A refusals (Hard)": "335",
+   "sens. (A)": "0.943 (0.965)",
+   "spec. (A)": "0.871 (0.787)",
+   "sens. (B)": "0.939 (0.978)",
+   "spec. (B)": "0.880 (0.679)"
+  },
+  {
+   "model": "Qwen3.5-9B",
+   "n ref. A refusals (Hard)": "633",
+   "sens. (A)": "0.976 (0.997)",
+   "spec. (A)": "0.898 (1.000)",
+   "sens. (B)": "0.975 (1.000)",
+   "spec. (B)": "0.892 (0.556)"
+  },
+  {
+   "model": "Qwen3.5-27B",
+   "n ref. A refusals (Hard)": "650",
+   "sens. (A)": "0.983 (0.997)",
+   "spec. (A)": "0.860 (1.000)",
+   "sens. (B)": "0.960 (0.997)",
+   "spec. (B)": "0.890 (1.000)"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "n ref. A refusals (Hard)": "55",
+   "sens. (A)": "0.945 (0.983)",
+   "spec. (A)": "0.987 (0.922)",
+   "sens. (B)": "1.000 (1.000)",
+   "spec. (B)": "0.985 (0.872)"
+  },
+  {
+   "model": "gemma-4-e2b",
+   "n ref. A refusals (Hard)": "551",
+   "sens. (A)": "0.980 (0.997)",
+   "spec. (A)": "0.871 (0.762)",
+   "sens. (B)": "0.984 (1.000)",
+   "spec. (B)": "0.876 (0.548)"
+  },
+  {
+   "model": "Phi-4-mini",
+   "n ref. A refusals (Hard)": "331",
+   "sens. (A)": "0.949 (0.971)",
+   "spec. (A)": "0.951 (0.958)",
+   "sens. (B)": "0.958 (0.981)",
+   "spec. (B)": "0.922 (0.730)"
+  }
+ ],
+ "notes": "Hard-1K; Toxic in parentheses. Reference B is WildGuard."
+}

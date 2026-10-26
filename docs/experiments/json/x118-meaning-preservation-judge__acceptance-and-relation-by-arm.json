@@ -1,0 +1,90 @@
+{
+ "title": "Share of (original, edited) pairs the independent judge reads as the same request, and the relation it assigns, per experiment and arm",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "arm",
+  "source / arm",
+  "share judged the same request [Wilson 95%]",
+  "same",
+  "narrower",
+  "broader",
+  "different",
+  "pairs (owner rows)"
+ ],
+ "rows": [
+  {
+   "arm": "benign, direction-nominated substitution (S)",
+   "source / arm": "x106/S",
+   "share judged the same request [Wilson 95%]": "0.605 [0.560, 0.648] (286/473)",
+   "same": "284",
+   "narrower": "26",
+   "broader": "102",
+   "different": "61",
+   "pairs (owner rows)": "473"
+  },
+  {
+   "arm": "benign, inert-word control (C)",
+   "source / arm": "x106/C",
+   "share judged the same request [Wilson 95%]": "0.855 [0.822, 0.882] (453/530)",
+   "same": "453",
+   "narrower": "20",
+   "broader": "46",
+   "different": "11",
+   "pairs (owner rows)": "530"
+  },
+  {
+   "arm": "benign, hedge removal (R)",
+   "source / arm": "x106/R",
+   "share judged the same request [Wilson 95%]": "0.070 [0.028, 0.167] (4/57)",
+   "same": "4",
+   "narrower": "0",
+   "broader": "53",
+   "different": "0",
+   "pairs (owner rows)": "57"
+  },
+  {
+   "arm": "benign, table-nominated substitution (S_T)",
+   "source / arm": "x113/S",
+   "share judged the same request [Wilson 95%]": "0.330 [0.314, 0.347] (995/3011)",
+   "same": "994",
+   "narrower": "289",
+   "broader": "726",
+   "different": "1002",
+   "pairs (owner rows)": "3011"
+  },
+  {
+   "arm": "benign, table-nearest-zero control (C_T)",
+   "source / arm": "x113/C",
+   "share judged the same request [Wilson 95%]": "0.806 [0.792, 0.819] (2558/3175)",
+   "same": "2558",
+   "narrower": "193",
+   "broader": "296",
+   "different": "128",
+   "pairs (owner rows)": "3175"
+  },
+  {
+   "arm": "harmful, substitution (S)",
+   "source / arm": "x108/S",
+   "share judged the same request [Wilson 95%]": "0.581 [0.535, 0.626] (258/444)",
+   "same": "258",
+   "narrower": "14",
+   "broader": "122",
+   "different": "50",
+   "pairs (owner rows)": "444"
+  },
+  {
+   "arm": "harmful, hedge removal (R)",
+   "source / arm": "x108/R",
+   "share judged the same request [Wilson 95%]": "0.130 [0.045, 0.321] (3/23)",
+   "same": "3",
+   "narrower": "0",
+   "broader": "19",
+   "different": "1",
+   "pairs (owner rows)": "23"
+  }
+ ],
+ "notes": [
+  "Owner rows: every (experiment, model, arm, unit) use of a pair counts once; 4,805 distinct pairs carry 7,713 owner rows.",
+  "`same_request` is the judge's boolean; the relation is its four-way label. A pair can be rejected and still be labelled `same` only if the two fields disagree, which the counts above show they do not."
+ ]
+}

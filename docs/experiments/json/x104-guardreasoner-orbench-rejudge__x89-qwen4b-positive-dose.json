@@ -1,0 +1,63 @@
+{
+ "title": "Qwen3.5-4B positive- and low-dose edited − base OR-Bench deltas, incumbent judge vs GuardReasoner (the x89 table rebuilt)",
+ "source": "experiments/x104-guardreasoner-orbench-rejudge.md",
+ "columns": [
+  "condition",
+  "Hard-1K incumbent",
+  "Hard-1K GuardReasoner",
+  "Toxic incumbent",
+  "Toxic GuardReasoner"
+ ],
+ "rows": [
+  {
+   "condition": "`x86_p050`",
+   "Hard-1K incumbent": "+0.0288",
+   "Hard-1K GuardReasoner": "**+0.0243** [+0.0121, +0.0364]",
+   "Toxic incumbent": "+0.0031",
+   "Toxic GuardReasoner": "**+0.0061** [+0.0000, +0.0168]"
+  },
+  {
+   "condition": "`x86_p100`",
+   "Hard-1K incumbent": "+0.0546",
+   "Hard-1K GuardReasoner": "**+0.0531** [+0.0387, +0.0682]",
+   "Toxic incumbent": "+0.0031",
+   "Toxic GuardReasoner": "**+0.0061** [+0.0000, +0.0153]"
+  },
+  {
+   "condition": "`x86_p150`",
+   "Hard-1K incumbent": "+0.0644",
+   "Hard-1K GuardReasoner": "**+0.0622** [+0.0462, +0.0788]",
+   "Toxic incumbent": "+0.0031",
+   "Toxic GuardReasoner": "**+0.0061** [+0.0000, +0.0153]"
+  },
+  {
+   "condition": "`x75_m1`",
+   "Hard-1K incumbent": "−0.0258",
+   "Hard-1K GuardReasoner": "**−0.0243** [−0.0371, −0.0121]",
+   "Toxic incumbent": "−0.0107",
+   "Toxic GuardReasoner": "**−0.0046** [−0.0168, +0.0061]"
+  },
+  {
+   "condition": "`x75_m2`",
+   "Hard-1K incumbent": "−0.0455",
+   "Hard-1K GuardReasoner": "**−0.0462** [−0.0629, −0.0311]",
+   "Toxic incumbent": "−0.0137",
+   "Toxic GuardReasoner": "**−0.0092** [−0.0236, +0.0031]"
+  },
+  {
+   "condition": "`x75_p1`",
+   "Hard-1K incumbent": "+0.0227",
+   "Hard-1K GuardReasoner": "**+0.0152** [+0.0030, +0.0281]",
+   "Toxic incumbent": "+0.0015",
+   "Toxic GuardReasoner": "**+0.0031** [+0.0000, +0.0107]"
+  },
+  {
+   "condition": "`x75_p2`",
+   "Hard-1K incumbent": "+0.0455",
+   "Hard-1K GuardReasoner": "**+0.0394** [+0.0265, +0.0531]",
+   "Toxic incumbent": "+0.0046",
+   "Toxic GuardReasoner": "**+0.0076** [+0.0000, +0.0183]"
+  }
+ ],
+ "notes": null
+}

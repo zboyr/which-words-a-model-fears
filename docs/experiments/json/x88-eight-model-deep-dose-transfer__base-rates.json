@@ -1,0 +1,79 @@
+{
+ "title": "Base rates per model",
+ "source": "experiments/x88-eight-model-deep-dose-transfer.md",
+ "columns": [
+  "model",
+  "Hard-1K refusal",
+  "Toxic refusal",
+  "StrongREJECT",
+  "IFEval strict",
+  "GSM8K strict"
+ ],
+ "rows": [
+  {
+   "model": "qwen (x87)",
+   "Hard-1K refusal": "0.8802",
+   "Toxic refusal": "0.9893",
+   "StrongREJECT": "0.0633",
+   "IFEval strict": "0.8041",
+   "GSM8K strict": "0.7877"
+  },
+  {
+   "model": "qwen08b",
+   "Hard-1K refusal": "0.4655",
+   "Toxic refusal": "0.7420",
+   "StrongREJECT": "0.1998",
+   "IFEval strict": "0.5213",
+   "GSM8K strict": "0.3108"
+  },
+  {
+   "model": "qwen2b",
+   "Hard-1K refusal": "0.6884",
+   "Toxic refusal": "0.9420",
+   "StrongREJECT": "0.1268",
+   "IFEval strict": "0.6599",
+   "GSM8K strict": "0.5398"
+  },
+  {
+   "model": "qwen9b",
+   "Hard-1K refusal": "0.9030",
+   "Toxic refusal": "0.9924",
+   "StrongREJECT": "0.0791",
+   "IFEval strict": "0.8318",
+   "GSM8K strict": "0.8294"
+  },
+  {
+   "model": "qwen27b",
+   "Hard-1K refusal": "0.8825",
+   "Toxic refusal": "0.9908",
+   "StrongREJECT": "0.0751",
+   "IFEval strict": "0.8743",
+   "GSM8K strict": "0.8658"
+  },
+  {
+   "model": "llama",
+   "Hard-1K refusal": "0.1031",
+   "Toxic refusal": "0.7374",
+   "StrongREJECT": "0.0287",
+   "IFEval strict": "0.7043",
+   "GSM8K strict": "0.7127"
+  },
+  {
+   "model": "gemma",
+   "Hard-1K refusal": "0.7991",
+   "Toxic refusal": "0.9649",
+   "StrongREJECT": "0.0486",
+   "IFEval strict": "0.7616",
+   "GSM8K strict": "0.4647"
+  },
+  {
+   "model": "phi",
+   "Hard-1K refusal": "0.5861",
+   "Toxic refusal": "0.9710",
+   "StrongREJECT": "0.0145",
+   "IFEval strict": "0.6950",
+   "GSM8K strict": "0.8165"
+  }
+ ],
+ "notes": null
+}

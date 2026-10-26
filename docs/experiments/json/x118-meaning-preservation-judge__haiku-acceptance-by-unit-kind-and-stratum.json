@@ -1,0 +1,142 @@
+{
+ "title": "Second judge: acceptance by unit kind (content word / hedge phrase) and by projection stratum",
+ "source": "experiments/x118-meaning-preservation-judge.md",
+ "columns": [
+  "bucket",
+  "accepted [Wilson 95%]"
+ ],
+ "rows": [
+  {
+   "bucket": "x106/C/content",
+   "accepted [Wilson 95%]": "0.968 [0.948, 0.981] (458/473)"
+  },
+  {
+   "bucket": "x106/C/hedge",
+   "accepted [Wilson 95%]": "0.965 [0.881, 0.990] (55/57)"
+  },
+  {
+   "bucket": "x106/R/hedge",
+   "accepted [Wilson 95%]": "0.123 [0.061, 0.232] (7/57)"
+  },
+  {
+   "bucket": "x106/S/content",
+   "accepted [Wilson 95%]": "0.854 [0.817, 0.884] (356/417)"
+  },
+  {
+   "bucket": "x106/S/hedge",
+   "accepted [Wilson 95%]": "0.304 [0.199, 0.433] (17/56)"
+  },
+  {
+   "bucket": "x108/R/hedge",
+   "accepted [Wilson 95%]": "0.087 [0.024, 0.268] (2/23)"
+  },
+  {
+   "bucket": "x108/S/content",
+   "accepted [Wilson 95%]": "0.736 [0.692, 0.776] (309/420)"
+  },
+  {
+   "bucket": "x108/S/hedge",
+   "accepted [Wilson 95%]": "0.190 [0.077, 0.400] (4/21)"
+  },
+  {
+   "bucket": "x113/C/content",
+   "accepted [Wilson 95%]": "0.942 [0.932, 0.950] (2438/2589)"
+  },
+  {
+   "bucket": "x113/C/hedge",
+   "accepted [Wilson 95%]": "0.973 [0.956, 0.983] (570/586)"
+  },
+  {
+   "bucket": "x113/S/content",
+   "accepted [Wilson 95%]": "0.609 [0.590, 0.629] (1478/2425)"
+  },
+  {
+   "bucket": "x113/S/hedge",
+   "accepted [Wilson 95%]": "0.183 [0.154, 0.216] (107/585)"
+  },
+  {
+   "bucket": "x106/C/high",
+   "accepted [Wilson 95%]": "0.981 [0.956, 0.992] (259/264)"
+  },
+  {
+   "bucket": "x106/C/low",
+   "accepted [Wilson 95%]": "0.922 [0.848, 0.962] (83/90)"
+  },
+  {
+   "bucket": "x106/C/mid",
+   "accepted [Wilson 95%]": "0.972 [0.935, 0.988] (171/176)"
+  },
+  {
+   "bucket": "x106/R/high",
+   "accepted [Wilson 95%]": "0.133 [0.053, 0.297] (4/30)"
+  },
+  {
+   "bucket": "x106/R/low",
+   "accepted [Wilson 95%]": "0.200 [0.036, 0.624] (1/5)"
+  },
+  {
+   "bucket": "x106/R/mid",
+   "accepted [Wilson 95%]": "0.091 [0.025, 0.278] (2/22)"
+  },
+  {
+   "bucket": "x106/S/high",
+   "accepted [Wilson 95%]": "0.738 [0.676, 0.793] (158/214)"
+  },
+  {
+   "bucket": "x106/S/low",
+   "accepted [Wilson 95%]": "0.924 [0.857, 0.961] (97/105)"
+  },
+  {
+   "bucket": "x106/S/mid",
+   "accepted [Wilson 95%]": "0.766 [0.693, 0.826] (118/154)"
+  },
+  {
+   "bucket": "x108/R/high",
+   "accepted [Wilson 95%]": "0.091 [0.025, 0.278] (2/22)"
+  },
+  {
+   "bucket": "x108/R/mid",
+   "accepted [Wilson 95%]": "0.000 [0.000, 0.793] (0/1)"
+  },
+  {
+   "bucket": "x108/S/high",
+   "accepted [Wilson 95%]": "0.709 [0.664, 0.751] (295/416)"
+  },
+  {
+   "bucket": "x108/S/low",
+   "accepted [Wilson 95%]": "0.333 [0.061, 0.792] (1/3)"
+  },
+  {
+   "bucket": "x108/S/mid",
+   "accepted [Wilson 95%]": "0.708 [0.508, 0.851] (17/24)"
+  },
+  {
+   "bucket": "x113/C/core",
+   "accepted [Wilson 95%]": "0.970 [0.963, 0.977] (2135/2200)"
+  },
+  {
+   "bucket": "x113/C/llama_extra",
+   "accepted [Wilson 95%]": "0.972 [0.935, 0.988] (171/176)"
+  },
+  {
+   "bucket": "x113/C/xstest",
+   "accepted [Wilson 95%]": "0.879 [0.854, 0.899] (702/799)"
+  },
+  {
+   "bucket": "x113/S/core",
+   "accepted [Wilson 95%]": "0.472 [0.451, 0.494] (978/2072)"
+  },
+  {
+   "bucket": "x113/S/llama_extra",
+   "accepted [Wilson 95%]": "0.639 [0.564, 0.708] (108/169)"
+  },
+  {
+   "bucket": "x113/S/xstest",
+   "accepted [Wilson 95%]": "0.649 [0.614, 0.682] (499/769)"
+  }
+ ],
+ "notes": [
+  "Owner rows. x113 buckets pool the eight models.",
+  "First judge: x106 S content 0.667 / hedge 0.143, x113 S_T content 0.397 / hedge 0.053."
+ ]
+}

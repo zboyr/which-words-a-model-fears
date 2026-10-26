@@ -1,0 +1,123 @@
+{
+ "title": "The boundary write next to the substitution, and the projection change behind it (refusal2)",
+ "source": "experiments/x106-natural-benign-lexical-carrier.md",
+ "columns": [
+  "model",
+  "write on O (−1.5)",
+  "write on S (−1.5)",
+  "on O − on S",
+  "r(S, −1.5)",
+  "proj(S) − proj(O) (sd units)",
+  "proj(C) − proj(O) (sd units)",
+  "share of S below the answered mean (O)",
+  "Spearman Δproj vs Δrefusal, S / C",
+  "Spearman delta_top vs effect, S / C",
+  "Spearman substitution effect vs write on O"
+ ],
+ "rows": [
+  {
+   "model": "0.8B",
+   "write on O (−1.5)": "**+0.084** [+0.068, +0.101]",
+   "write on S (−1.5)": "**+0.056** [+0.040, +0.073]",
+   "on O − on S": "**+0.027** [+0.005, +0.051]",
+   "r(S, −1.5)": "0.119",
+   "proj(S) − proj(O) (sd units)": "-0.43",
+   "proj(C) − proj(O) (sd units)": "-0.01",
+   "share of S below the answered mean (O)": "0.42 (0.29)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.37 / +0.22",
+   "Spearman delta_top vs effect, S / C": "+0.05 / +0.07",
+   "Spearman substitution effect vs write on O": "+0.44 [+0.34, +0.54]"
+  },
+  {
+   "model": "2B",
+   "write on O (−1.5)": "**+0.234** [+0.210, +0.258]",
+   "write on S (−1.5)": "**+0.148** [+0.124, +0.173]",
+   "on O − on S": "**+0.082** [+0.052, +0.113]",
+   "r(S, −1.5)": "0.161",
+   "proj(S) − proj(O) (sd units)": "-0.58",
+   "proj(C) − proj(O) (sd units)": "-0.02",
+   "share of S below the answered mean (O)": "0.34 (0.16)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.64 / +0.33",
+   "Spearman delta_top vs effect, S / C": "+0.18 / +0.08",
+   "Spearman substitution effect vs write on O": "+0.46 [+0.37, +0.54]"
+  },
+  {
+   "model": "4B",
+   "write on O (−1.5)": "**+0.199** [+0.175, +0.223]",
+   "write on S (−1.5)": "**+0.191** [+0.165, +0.217]",
+   "on O − on S": "+0.016 [-0.019, +0.050]",
+   "r(S, −1.5)": "0.378",
+   "proj(S) − proj(O) (sd units)": "-0.88",
+   "proj(C) − proj(O) (sd units)": "-0.04",
+   "share of S below the answered mean (O)": "0.20 (0.02)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.80 / +0.44",
+   "Spearman delta_top vs effect, S / C": "+0.36 / +0.04",
+   "Spearman substitution effect vs write on O": "+0.12 [+0.02, +0.23]"
+  },
+  {
+   "model": "9B",
+   "write on O (−1.5)": "**+0.201** [+0.178, +0.225]",
+   "write on S (−1.5)": "**+0.200** [+0.174, +0.225]",
+   "on O − on S": "+0.011 [-0.022, +0.044]",
+   "r(S, −1.5)": "0.453",
+   "proj(S) − proj(O) (sd units)": "-0.74",
+   "proj(C) − proj(O) (sd units)": "-0.03",
+   "share of S below the answered mean (O)": "0.15 (0.01)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.77 / +0.38",
+   "Spearman delta_top vs effect, S / C": "+0.28 / +0.00",
+   "Spearman substitution effect vs write on O": "+0.04 [-0.06, +0.15]"
+  },
+  {
+   "model": "27B",
+   "write on O (−1.5)": "**+0.188** [+0.162, +0.213]",
+   "write on S (−1.5)": "**+0.166** [+0.138, +0.195]",
+   "on O − on S": "+0.015 [-0.021, +0.051]",
+   "r(S, −1.5)": "0.408",
+   "proj(S) − proj(O) (sd units)": "-0.75",
+   "proj(C) − proj(O) (sd units)": "-0.03",
+   "share of S below the answered mean (O)": "0.17 (0.03)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.74 / +0.30",
+   "Spearman delta_top vs effect, S / C": "+0.29 / +0.05",
+   "Spearman substitution effect vs write on O": "+0.05 [-0.06, +0.15]"
+  },
+  {
+   "model": "Llama-3.2-3B",
+   "write on O (−1.5)": "**+0.009** [+0.002, +0.018]",
+   "write on S (−1.5)": "+0.002 [-0.003, +0.007]",
+   "on O − on S": "+0.009 [-0.001, +0.018]",
+   "r(S, −1.5)": "0.036",
+   "proj(S) − proj(O) (sd units)": "-0.69",
+   "proj(C) − proj(O) (sd units)": "-0.05",
+   "share of S below the answered mean (O)": "0.59 (0.51)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.23 / +0.16",
+   "Spearman delta_top vs effect, S / C": "+0.06 / -0.01",
+   "Spearman substitution effect vs write on O": "+0.49 [+0.27, +0.67]"
+  },
+  {
+   "model": "Gemma-4-E2B",
+   "write on O (−1.5)": "**+0.162** [+0.134, +0.190]",
+   "write on S (−1.5)": "**+0.137** [+0.108, +0.168]",
+   "on O − on S": "+0.020 [-0.019, +0.057]",
+   "r(S, −1.5)": "0.386",
+   "proj(S) − proj(O) (sd units)": "-0.57",
+   "proj(C) − proj(O) (sd units)": "-0.01",
+   "share of S below the answered mean (O)": "0.32 (0.17)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.69 / +0.35",
+   "Spearman delta_top vs effect, S / C": "+0.27 / -0.00",
+   "Spearman substitution effect vs write on O": "+0.22 [+0.11, +0.33]"
+  },
+  {
+   "model": "Phi-4-mini",
+   "write on O (−1.5)": "**+0.181** [+0.160, +0.202]",
+   "write on S (−1.5)": "**+0.110** [+0.090, +0.131]",
+   "on O − on S": "**+0.071** [+0.043, +0.099]",
+   "r(S, −1.5)": "0.107",
+   "proj(S) − proj(O) (sd units)": "-0.70",
+   "proj(C) − proj(O) (sd units)": "-0.01",
+   "share of S below the answered mean (O)": "0.45 (0.26)",
+   "Spearman Δproj vs Δrefusal, S / C": "+0.65 / +0.32",
+   "Spearman delta_top vs effect, S / C": "+0.16 / -0.05",
+   "Spearman substitution effect vs write on O": "+0.51 [+0.41, +0.59]"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "title": "G2 direction specificity: bidirectional refusal effect at a*, true direction versus KL-matched nulls",
+ "source": "experiments/x86-crossed-keyword-boundary-intervention.md",
+ "columns": [
+  "condition",
+  "bidirectional(a*)"
+ ],
+ "rows": [
+  {
+   "condition": "true `both`",
+   "bidirectional(a*)": "+0.083 [+0.053, +0.115]"
+  },
+  {
+   "condition": "KL-matched random null",
+   "bidirectional(a*)": "−0.005 [−0.034, +0.023]"
+  },
+  {
+   "condition": "KL-matched permutation null",
+   "bidirectional(a*)": "+0.028 [−0.011, +0.069]"
+  },
+  {
+   "condition": "**true − random**",
+   "bidirectional(a*)": "**+0.088 [+0.054, +0.124]**, Holm p = 2×10⁻⁴"
+  },
+  {
+   "condition": "**true − permutation**",
+   "bidirectional(a*)": "**+0.055 [+0.017, +0.095]**, Holm p = 2×10⁻³"
+  }
+ ],
+ "notes": null
+}

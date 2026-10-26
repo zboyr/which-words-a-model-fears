@@ -1,0 +1,79 @@
+{
+ "title": "ρ(table shift, per-word Δ_EO) over the retained words: the model's own table against the Qwen3.5-4B BP table, pooled prompts; per population; the in-context key-word shift",
+ "source": "experiments/x112-cross-model-vocabulary-table.md",
+ "columns": [
+  "model",
+  "own table [95% CI]",
+  "Qwen3.5-4B BP table [95% CI]",
+  "own − Qwen [95% CI]",
+  "own, benign / harmful prompts",
+  "Qwen, benign / harmful prompts",
+  "in-context shift"
+ ],
+ "rows": [
+  {
+   "model": "Gemma",
+   "own table [95% CI]": "+0.78 [+0.57, +0.82]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.71 [+0.51, +0.79]",
+   "own − Qwen [95% CI]": "+0.07 [-0.03, +0.14]",
+   "own, benign / harmful prompts": "+0.80 / +0.66",
+   "Qwen, benign / harmful prompts": "+0.71 / +0.61",
+   "in-context shift": "+0.90"
+  },
+  {
+   "model": "Llama",
+   "own table [95% CI]": "+0.54 [+0.44, +0.64]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.59 [+0.48, +0.67]",
+   "own − Qwen [95% CI]": "-0.05 [-0.12, +0.05]",
+   "own, benign / harmful prompts": "+0.46 / +0.58",
+   "Qwen, benign / harmful prompts": "+0.52 / +0.60",
+   "in-context shift": "+0.66"
+  },
+  {
+   "model": "Phi",
+   "own table [95% CI]": "+0.91 [+0.85, +0.93]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.72 [+0.64, +0.76]",
+   "own − Qwen [95% CI]": "+0.19 [+0.12, +0.25]",
+   "own, benign / harmful prompts": "+0.88 / +0.90",
+   "Qwen, benign / harmful prompts": "+0.73 / +0.66",
+   "in-context shift": "+0.93"
+  },
+  {
+   "model": "Qwen 0.8B",
+   "own table [95% CI]": "+0.96 [+0.92, +0.97]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.74 [+0.66, +0.79]",
+   "own − Qwen [95% CI]": "+0.22 [+0.16, +0.28]",
+   "own, benign / harmful prompts": "+0.95 / +0.91",
+   "Qwen, benign / harmful prompts": "+0.72 / +0.71",
+   "in-context shift": "+0.97"
+  },
+  {
+   "model": "Qwen 2B",
+   "own table [95% CI]": "+0.82 [+0.74, +0.87]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.76 [+0.67, +0.79]",
+   "own − Qwen [95% CI]": "+0.06 [+0.00, +0.14]",
+   "own, benign / harmful prompts": "+0.83 / +0.72",
+   "Qwen, benign / harmful prompts": "+0.73 / +0.71",
+   "in-context shift": "+0.86"
+  },
+  {
+   "model": "Qwen 9B",
+   "own table [95% CI]": "+0.83 [+0.73, +0.88]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.85 [+0.77, +0.87]",
+   "own − Qwen [95% CI]": "-0.02 [-0.07, +0.04]",
+   "own, benign / harmful prompts": "+0.85 / +0.74",
+   "Qwen, benign / harmful prompts": "+0.83 / +0.77",
+   "in-context shift": "+0.95"
+  },
+  {
+   "model": "Qwen 27B",
+   "own table [95% CI]": "+0.78 [+0.63, +0.85]",
+   "Qwen3.5-4B BP table [95% CI]": "+0.70 [+0.56, +0.77]",
+   "own − Qwen [95% CI]": "+0.08 [+0.02, +0.13]",
+   "own, benign / harmful prompts": "+0.83 / +0.46",
+   "Qwen, benign / harmful prompts": "+0.76 / +0.43",
+   "in-context shift": "+0.87"
+  }
+ ],
+ "notes": "Spearman over 40 words (39 on Llama). Largest permutation p over the fourteen table ρ values: 0.0004. Intervals: prompt-level paired bootstrap, 10,000 draws; own − Qwen is the paired difference of the two ρ values over the same draws."
+}

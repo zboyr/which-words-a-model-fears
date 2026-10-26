@@ -1,0 +1,183 @@
+{
+ "title": "Spearman ρ(predictor, per-word Δ_EO) by prompt set, word subset and cell",
+ "source": "experiments/x111-vocabulary-table-dose-response.md",
+ "columns": [
+  "prompts",
+  "predictor",
+  "ρ all 40 [95% CI]",
+  "perm p",
+  "ρ concordant 24 [95% CI]",
+  "ρ middle four bins (12) [95% CI]",
+  "partial ρ (tokens, log freq)",
+  "per-cell ρ (n cells)",
+  "per-cell ceiling"
+ ],
+ "rows": [
+  {
+   "prompts": "benign",
+   "predictor": "benign table",
+   "ρ all 40 [95% CI]": "+0.47 [+0.39, +0.54]",
+   "perm p": "0.0024",
+   "ρ concordant 24 [95% CI]": "+0.90 [+0.86, +0.94]",
+   "ρ middle four bins (12) [95% CI]": "+0.82 [+0.71, +0.90]",
+   "partial ρ (tokens, log freq)": "+0.41",
+   "per-cell ρ (n cells)": "+0.30 (1,280)",
+   "per-cell ceiling": "0.88"
+  },
+  {
+   "prompts": "benign",
+   "predictor": "BP table",
+   "ρ all 40 [95% CI]": "+0.90 [+0.85, +0.92]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.91 [+0.86, +0.94]",
+   "ρ middle four bins (12) [95% CI]": "+0.86 [+0.76, +0.92]",
+   "partial ρ (tokens, log freq)": "+0.89",
+   "per-cell ρ (n cells)": "+0.56 (1,280)",
+   "per-cell ceiling": "0.88"
+  },
+  {
+   "prompts": "benign",
+   "predictor": "HP table",
+   "ρ all 40 [95% CI]": "+0.79 [+0.73, +0.82]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.89 [+0.85, +0.92]",
+   "ρ middle four bins (12) [95% CI]": "+0.69 [+0.55, +0.80]",
+   "partial ρ (tokens, log freq)": "+0.77",
+   "per-cell ρ (n cells)": "+0.49 (1,280)",
+   "per-cell ceiling": "0.88"
+  },
+  {
+   "prompts": "benign",
+   "predictor": "mixed table",
+   "ρ all 40 [95% CI]": "+0.81 [+0.75, +0.86]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.90 [+0.86, +0.93]",
+   "ρ middle four bins (12) [95% CI]": "+0.80 [+0.67, +0.87]",
+   "partial ρ (tokens, log freq)": "+0.79",
+   "per-cell ρ (n cells)": "+0.51 (1,280)",
+   "per-cell ceiling": "0.88"
+  },
+  {
+   "prompts": "benign",
+   "predictor": "in-context shift",
+   "ρ all 40 [95% CI]": "+0.89 [+0.84, +0.92]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.91 [+0.87, +0.95]",
+   "ρ middle four bins (12) [95% CI]": "+0.90 [+0.81, +0.96]",
+   "partial ρ (tokens, log freq)": "+0.87",
+   "per-cell ρ (n cells)": "+0.74 (1,280)",
+   "per-cell ceiling": "0.88"
+  },
+  {
+   "prompts": "harmful",
+   "predictor": "benign table",
+   "ρ all 40 [95% CI]": "+0.64 [+0.53, +0.75]",
+   "perm p": "0.0002",
+   "ρ concordant 24 [95% CI]": "+0.86 [+0.76, +0.91]",
+   "ρ middle four bins (12) [95% CI]": "+0.61 [+0.31, +0.77]",
+   "partial ρ (tokens, log freq)": "+0.61",
+   "per-cell ρ (n cells)": "+0.36 (1,280)",
+   "per-cell ceiling": "0.81"
+  },
+  {
+   "prompts": "harmful",
+   "predictor": "BP table",
+   "ρ all 40 [95% CI]": "+0.78 [+0.69, +0.81]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.87 [+0.77, +0.92]",
+   "ρ middle four bins (12) [95% CI]": "+0.72 [+0.39, +0.84]",
+   "partial ρ (tokens, log freq)": "+0.76",
+   "per-cell ρ (n cells)": "+0.42 (1,280)",
+   "per-cell ceiling": "0.81"
+  },
+  {
+   "prompts": "harmful",
+   "predictor": "HP table",
+   "ρ all 40 [95% CI]": "+0.92 [+0.85, +0.93]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.95 [+0.88, +0.98]",
+   "ρ middle four bins (12) [95% CI]": "+0.93 [+0.70, +0.97]",
+   "partial ρ (tokens, log freq)": "+0.92",
+   "per-cell ρ (n cells)": "+0.48 (1,280)",
+   "per-cell ceiling": "0.81"
+  },
+  {
+   "prompts": "harmful",
+   "predictor": "mixed table",
+   "ρ all 40 [95% CI]": "+0.86 [+0.77, +0.88]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.90 [+0.81, +0.94]",
+   "ρ middle four bins (12) [95% CI]": "+0.88 [+0.59, +0.94]",
+   "partial ρ (tokens, log freq)": "+0.85",
+   "per-cell ρ (n cells)": "+0.46 (1,280)",
+   "per-cell ceiling": "0.81"
+  },
+  {
+   "prompts": "harmful",
+   "predictor": "in-context shift",
+   "ρ all 40 [95% CI]": "+0.94 [+0.88, +0.96]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.94 [+0.88, +0.97]",
+   "ρ middle four bins (12) [95% CI]": "+0.92 [+0.69, +0.97]",
+   "partial ρ (tokens, log freq)": "+0.94",
+   "per-cell ρ (n cells)": "+0.78 (1,280)",
+   "per-cell ceiling": "0.81"
+  },
+  {
+   "prompts": "pooled",
+   "predictor": "benign table",
+   "ρ all 40 [95% CI]": "+0.57 [+0.48, +0.63]",
+   "perm p": "0.0006",
+   "ρ concordant 24 [95% CI]": "+0.90 [+0.86, +0.93]",
+   "ρ middle four bins (12) [95% CI]": "+0.78 [+0.74, +0.91]",
+   "partial ρ (tokens, log freq)": "+0.52",
+   "per-cell ρ (n cells)": "+0.33 (2,560)",
+   "per-cell ceiling": "0.86"
+  },
+  {
+   "prompts": "pooled",
+   "predictor": "BP table",
+   "ρ all 40 [95% CI]": "+0.90 [+0.86, +0.92]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.90 [+0.87, +0.94]",
+   "ρ middle four bins (12) [95% CI]": "+0.87 [+0.80, +0.95]",
+   "partial ρ (tokens, log freq)": "+0.89",
+   "per-cell ρ (n cells)": "+0.49 (2,560)",
+   "per-cell ceiling": "0.86"
+  },
+  {
+   "prompts": "pooled",
+   "predictor": "HP table",
+   "ρ all 40 [95% CI]": "+0.88 [+0.84, +0.90]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.94 [+0.91, +0.96]",
+   "ρ middle four bins (12) [95% CI]": "+0.94 [+0.80, +0.95]",
+   "partial ρ (tokens, log freq)": "+0.87",
+   "per-cell ρ (n cells)": "+0.48 (2,560)",
+   "per-cell ceiling": "0.86"
+  },
+  {
+   "prompts": "pooled",
+   "predictor": "mixed table",
+   "ρ all 40 [95% CI]": "+0.88 [+0.83, +0.90]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.92 [+0.88, +0.95]",
+   "ρ middle four bins (12) [95% CI]": "+0.94 [+0.86, +0.97]",
+   "partial ρ (tokens, log freq)": "+0.87",
+   "per-cell ρ (n cells)": "+0.48 (2,560)",
+   "per-cell ceiling": "0.86"
+  },
+  {
+   "prompts": "pooled",
+   "predictor": "in-context shift",
+   "ρ all 40 [95% CI]": "+0.90 [+0.85, +0.93]",
+   "perm p": "0.0001",
+   "ρ concordant 24 [95% CI]": "+0.94 [+0.91, +0.96]",
+   "ρ middle four bins (12) [95% CI]": "+0.97 [+0.87, +0.97]",
+   "partial ρ (tokens, log freq)": "+0.89",
+   "per-cell ρ (n cells)": "+0.75 (2,560)",
+   "per-cell ceiling": "0.86"
+  }
+ ],
+ "notes": "Per-cell ceiling: the twenty samples split into random halves of ten (20 splits), half-half Spearman of r(E) − r(O) across cells, Spearman-Brown to twenty samples, square root. Partial ρ holds token count and log wordfreq rank fixed. results.json → rho, noise_ceiling_per_cell."
+}

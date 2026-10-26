@@ -1,0 +1,77 @@
+{
+ "title": "GSM8K exact-match deltas (edited − base, 95% intervals) for the 13 edited conditions",
+ "source": "experiments/x87-external-safety-overrefusal-eval.md",
+ "columns": [
+  "exact_match, edited − base",
+  "strict-match",
+  "flexible-extract"
+ ],
+ "rows": [
+  {
+   "exact_match, edited − base": "`x86_full` (dose −0.5)",
+   "strict-match": "−0.0015 [−0.0068, +0.0038]",
+   "flexible-extract": "+0.0023 [−0.0038, +0.0091]"
+  },
+  {
+   "exact_match, edited − base": "`x86_m075` (−0.75)",
+   "strict-match": "+0.0015 [−0.0038, +0.0068]",
+   "flexible-extract": "+0.0023 [−0.0038, +0.0091]"
+  },
+  {
+   "exact_match, edited − base": "`x86_m100` (−1.0)",
+   "strict-match": "0.0000 [−0.0053, +0.0053]",
+   "flexible-extract": "+0.0023 [−0.0045, +0.0091]"
+  },
+  {
+   "exact_match, edited − base": "`x75_m3` (scale −3)",
+   "strict-match": "0.0000 [−0.0159, +0.0152]",
+   "flexible-extract": "−0.0038 [−0.0190, +0.0114]"
+  },
+  {
+   "exact_match, edited − base": "`x75_m4` (−4)",
+   "strict-match": "+0.0106 [−0.0068, +0.0273]",
+   "flexible-extract": "+0.0068 [−0.0099, +0.0243]"
+  },
+  {
+   "exact_match, edited − base": "`x75_p3` (+3)",
+   "strict-match": "+0.0076 [−0.0076, +0.0227]",
+   "flexible-extract": "+0.0076 [−0.0083, +0.0227]"
+  },
+  {
+   "exact_match, edited − base": "`x86_m125` (−1.25)",
+   "strict-match": "+0.0015 [−0.0053, +0.0083]",
+   "flexible-extract": "+0.0023 [−0.0053, +0.0099]"
+  },
+  {
+   "exact_match, edited − base": "`x86_m150` (−1.5)",
+   "strict-match": "+0.0076 [+0.0015, +0.0136]",
+   "flexible-extract": "+0.0091 [+0.0030, +0.0159]"
+  },
+  {
+   "exact_match, edited − base": "`x86_m200` (−2.0)",
+   "strict-match": "+0.0061 [−0.0015, +0.0136]",
+   "flexible-extract": "+0.0076 [+0.0000, +0.0159]"
+  },
+  {
+   "exact_match, edited − base": "`x86_m300` (−3.0)",
+   "strict-match": "+0.0030 [−0.0053, +0.0106]",
+   "flexible-extract": "+0.0053 [−0.0023, +0.0129]"
+  },
+  {
+   "exact_match, edited − base": "`x75_m5` (−5)",
+   "strict-match": "+0.0015 [−0.0152, +0.0182]",
+   "flexible-extract": "−0.0045 [−0.0220, +0.0121]"
+  },
+  {
+   "exact_match, edited − base": "`x75_m6` (−6)",
+   "strict-match": "+0.0091 [−0.0083, +0.0273]",
+   "flexible-extract": "+0.0076 [−0.0106, +0.0250]"
+  },
+  {
+   "exact_match, edited − base": "`x75_m7` (−7)",
+   "strict-match": "+0.0030 [−0.0152, +0.0212]",
+   "flexible-extract": "+0.0008 [−0.0174, +0.0190]"
+  }
+ ],
+ "notes": null
+}

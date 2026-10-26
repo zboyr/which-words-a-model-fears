@@ -1,0 +1,77 @@
+{
+ "title": "Hijack (reasoning-disabled label) per concordant bin and over all 40 words",
+ "source": "experiments/x111-vocabulary-table-dose-response.md",
+ "columns": [
+  "bin",
+  "benign: hijack rate",
+  "benign: refusal2 given hijack / not",
+  "harmful: hijack rate",
+  "harmful: refusal2 given hijack / not"
+ ],
+ "rows": [
+  {
+   "bin": "[0,1)",
+   "benign: hijack rate": "0.416",
+   "benign: refusal2 given hijack / not": "0.319 / 0.492",
+   "harmful: hijack rate": "0.130",
+   "harmful: refusal2 given hijack / not": "0.490 / 0.430"
+  },
+  {
+   "bin": "[1,5)",
+   "benign: hijack rate": "0.283",
+   "benign: refusal2 given hijack / not": "0.223 / 0.500",
+   "harmful: hijack rate": "0.028",
+   "harmful: refusal2 given hijack / not": "0.321 / 0.510"
+  },
+  {
+   "bin": "[5,25)",
+   "benign: hijack rate": "0.061",
+   "benign: refusal2 given hijack / not": "0.237 / 0.499",
+   "harmful: hijack rate": "0.071",
+   "harmful: refusal2 given hijack / not": "0.088 / 0.581"
+  },
+  {
+   "bin": "[25,50)",
+   "benign: hijack rate": "0.096",
+   "benign: refusal2 given hijack / not": "0.427 / 0.592",
+   "harmful: hijack rate": "0.064",
+   "harmful: refusal2 given hijack / not": "0.262 / 0.652"
+  },
+  {
+   "bin": "[50,75)",
+   "benign: hijack rate": "0.195",
+   "benign: refusal2 given hijack / not": "0.504 / 0.652",
+   "harmful: hijack rate": "0.083",
+   "harmful: refusal2 given hijack / not": "0.239 / 0.656"
+  },
+  {
+   "bin": "[75,95)",
+   "benign: hijack rate": "0.235",
+   "benign: refusal2 given hijack / not": "0.648 / 0.747",
+   "harmful: hijack rate": "0.093",
+   "harmful: refusal2 given hijack / not": "0.715 / 0.670"
+  },
+  {
+   "bin": "[95,99)",
+   "benign: hijack rate": "0.463",
+   "benign: refusal2 given hijack / not": "0.758 / 0.882",
+   "harmful: hijack rate": "0.316",
+   "harmful: refusal2 given hijack / not": "0.871 / 0.745"
+  },
+  {
+   "bin": "[99,100]",
+   "benign: hijack rate": "0.743",
+   "benign: refusal2 given hijack / not": "0.917 / 0.923",
+   "harmful: hijack rate": "0.702",
+   "harmful: refusal2 given hijack / not": "0.957 / 0.749"
+  },
+  {
+   "bin": "all 40",
+   "benign: hijack rate": "0.321",
+   "benign: refusal2 given hijack / not": "0.568 / 0.660",
+   "harmful: hijack rate": "0.164",
+   "harmful: refusal2 given hijack / not": "0.676 / 0.615"
+  }
+ ],
+ "notes": "Hijack = the response takes the appended word into the request (x110's judge prompt, reasoning disabled); rates over the responses of the bin's E cells on the kept prompts (benign 32, harmful 32). results.json → hijack_by_group."
+}

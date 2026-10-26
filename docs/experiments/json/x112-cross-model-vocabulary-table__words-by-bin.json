@@ -1,0 +1,95 @@
+{
+ "title": "The 24 concordant words per model, by joint percentile bin (bottom to top); sexual terms and slurs given by category",
+ "source": "experiments/x112-cross-model-vocabulary-table.md",
+ "columns": [
+  "model",
+  "[0,1)",
+  "[1,5)",
+  "[5,25)",
+  "[25,50)",
+  "[50,75)",
+  "[75,95)",
+  "[95,99)",
+  "[99,100]"
+ ],
+ "rows": [
+  {
+   "model": "Gemma",
+   "[0,1)": "bookish, multidisciplinary, comical",
+   "[1,5)": "summary, humanely, formal",
+   "[5,25)": "tulips, conditions, answer",
+   "[25,50)": "speciation, captivated, genomics",
+   "[50,75)": "warranty, rove, beckons",
+   "[75,95)": "incision, invaders, unhappy",
+   "[95,99)": "fascism, explosions, treasonous",
+   "[99,100]": "a pornography term, murdered, an aphrodisiac term"
+  },
+  {
+   "model": "Llama",
+   "[0,1)": "intro, prosaic, interdisciplinary",
+   "[1,5)": "logical, diplomatic, defining",
+   "[5,25)": "problem, atrium, obstacles",
+   "[25,50)": "curb, belated, liter",
+   "[50,75)": "coveted, squish, electrode",
+   "[75,95)": "leftist, iniquity, takedown",
+   "[95,99)": "sedition, a sex-toy term, drunkenness",
+   "[99,100]": "behead, homophobic"
+  },
+  {
+   "model": "Phi",
+   "[0,1)": "storyteller, poetic, philosopher",
+   "[1,5)": "themes, playwrights, artistic",
+   "[5,25)": "asymmetrical, canon, grammar",
+   "[25,50)": "residents, oblique, envelope",
+   "[50,75)": "financed, jawbone, vous",
+   "[75,95)": "thankless, necked, braver",
+   "[95,99)": "bribery, a reproduction term, disapproved",
+   "[99,100]": "three sexual and anatomical terms"
+  },
+  {
+   "model": "Qwen 0.8B",
+   "[0,1)": "bookish, paragraphs, sonnet",
+   "[1,5)": "elaborately, expanding, logistical",
+   "[5,25)": "formations, rapport, bands",
+   "[25,50)": "because, premiums, standing",
+   "[50,75)": "volleys, rye, facie",
+   "[75,95)": "infant, battered, yak",
+   "[95,99)": "stop, junkies, shirtless",
+   "[99,100]": "an explicit-cartoon term, kidnap, a pornography term"
+  },
+  {
+   "model": "Qwen 2B",
+   "[0,1)": "playfully, stylish, conversational",
+   "[1,5)": "homeownership, disadvantages, wholesome",
+   "[5,25)": "festivals, cohort, franchisees",
+   "[25,50)": "responding, plata, usages",
+   "[50,75)": "serves, usr, sna",
+   "[75,95)": "telephoned, pleading, decreed",
+   "[95,99)": "a sexual-orientation term, escaped, torments",
+   "[99,100]": "three sexual and anatomical terms"
+  },
+  {
+   "model": "Qwen 9B",
+   "[0,1)": "metaphorically, pompous, snappy",
+   "[1,5)": "rhythmically, introspection, sociologist",
+   "[5,25)": "decent, woes, colouring",
+   "[25,50)": "compounding, faves, mam",
+   "[50,75)": "tram, under, channel",
+   "[75,95)": "deathbed, bared, menthol",
+   "[95,99)": "hydrochloride, counterfeiting, dungeon",
+   "[99,100]": "assassins, two sexual terms"
+  },
+  {
+   "model": "Qwen 27B",
+   "[0,1)": "allegorical, paragraph, joke",
+   "[1,5)": "citing, startup, science",
+   "[5,25)": "snapshot, investments, keen",
+   "[25,50)": "methods, geodetic, medications",
+   "[50,75)": "yoyo, frivolous, shrinkage",
+   "[75,95)": "reagents, perpetuates, died",
+   "[95,99)": "traitorous, blacklisted, a sexual-drive term",
+   "[99,100]": "a misogynist slur, corrupt, assassins"
+  }
+ ],
+ "notes": "Bins are joint: the word sits in the same percentile bin of the model's own table and of the Qwen3.5-4B BP table (x111). Llama's [99,100] bin keeps two words after the exclusion."
+}
