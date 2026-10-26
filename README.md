@@ -238,6 +238,14 @@ python code/x102_analyze.py                # data/results/x102_judge_agreement.j
 python code/x104_analyze.py --skip-merge   # data/results/x104_*.json from the shipped label file
 ```
 
+## License
+
+The code in this repository is released under the [MIT License](LICENSE). The data on
+Hugging Face is released under CC BY 4.0, except the parts taken from third-party datasets
+(OR-Bench, XSTest, WildJailbreak and others), which keep their original licenses; the
+[dataset card](https://huggingface.co/datasets/vhboyr/which-words-a-model-fears#license)
+lists each source and its license.
+
 ## Citation
 
 ```bibtex
